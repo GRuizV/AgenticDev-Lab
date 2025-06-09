@@ -1,0 +1,2029 @@
+Thread link: https://www.reddit.com/r/RooCode/comments/1l03vpc/my_0_roo_code_setup_for_the_best_results/
+
+
+
+
+### Actual Reddit Post ###
+
+"
+Some of the comments
+Icono de r/RooCode
+Ir a RooCode
+r/RooCode
+•
+hace 9 d
+livecodelife
+
+My $0 Roo Code setup for the best results
+Mode Prompt
+I’ve been running this setup for nearly a week straight and spent $0 and at this point Roo has built a full API from a terminal project for creating baccarat game simulations based on betting strategies and analyzing the results.
+
+This was my test case for whether to change to Roo Code from Windsurf and the fact that I’ve been able to run it entirely free with very little input other than tweaking the prompts, adding things like memory bank, and putting in more MCP tools as I go has sold me on it.
+
+Gist if you want to give it a star. You can probably tell I wrote some of it with the help of Gemini because I hate writing but I've went through and added useful links and context. Here is a (somewhat) shortened version.
+
+Edit - I forgot to mention, a key action in this is to add the $10 credit to OpenRouter to get the 1000 free requests per day. It's a one time fee and it's worth it. I have yet to hit limits. I set an alert to ping me if it ever uses even a cent because I want this to be free.
+
+---
+
+Roo Code Workflow: An Advanced LLM-Powered Development Setup
+This gist outlines a highly effective and cost-optimized workflow for software development using Roo Code, leveraging a multi-model approach and a custom "Think" mode for enhanced reasoning and token efficiency. This setup has been successfully used to build complex applications, such as Baccarat game simulations with betting strategy analysis.
+
+Core Components & Model Allocation
+The power of this setup lies in strategically assigning different Large Language Models (LLMs) to specialized "modes" within Roo Code, optimizing for performance, cost, and specific task requirements.
+
+Orchestrator Mode: The central coordinator, responsible for breaking down complex tasks and delegating to other modes.
+
+LLM: Gemini (via Google AI Studio API Key) - Chosen for its strong reasoning capabilities and cost-effectiveness for the orchestration role.
+
+Think Mode (Custom - Found from this Reddit Post): A specialized reasoning engine that pre-processes complex subtasks, providing detailed plans and anticipating challenges.
+
+LLM: Gemini (via Google AI Studio API Key) - Utilizes Gemini's robust analytical skills for structured thinking.
+
+Architect Mode: Focuses on high-level design, system architecture, and module definitions. DeepSeek R1 0528 can be a good option for this as well.
+
+LLM: DeepSeek R1 0528 (via OpenRouter) - Selected for its architectural design prowess.
+
+Code Mode: Generates actual code based on the designs and plans.
+
+LLM Pool: DeepSeek V3 0324, Qwen3 235B A22B (or other Qwen models), Mistral: Devstral Small (all via OpenRouter) - At the time of writing these all have free models via OpenRouter. DeepSeek V3 0324 can be a little slow or too much for simple or repetitive tasks so it can be good to switch to a Qwen model if a lot of context isn't needed. For very simple tasks that require more context, Devstral can be a really good option.
+
+Debug Mode: Identifies and resolves issues in generated code.
+
+LLM Pool: Same as Code Mode - The ability to switch models helps in tackling different types of bugs.
+
+Roo Code Memory Bank: Provides persistent context and allows for the storage and retrieval of plans, code snippets, and other relevant information.
+
+Integration: Plans are primarily triggered and managed from the Orchestrator mode.
+
+Detailed Workflow Breakdown
+The workflow is designed to mimic a highly efficient development team, with each "mode" acting as a specialized team member.
+
+Initial Task Reception (Orchestrator):
+
+A complex development task is given to the Orchestrator mode.
+
+The Orchestrator's primary role is to understand the task and break it down into manageable, logical subtasks.
+
+It can be helpful to slightly update the Orchestrator prompt for this. Adding something like "When given a complex task, break it down into granular, logical subtasks that can be delegated to appropriate specialized modes." in addition to the rest of the prompt
+
+Strategic Reasoning with "Think" Mode:
+
+For any complex subtask that requires detailed planning, analysis, or anticipation of edge cases before execution, the Orchestrator first delegates to the custom "Think" mode.
+
+Orchestrator's Delegation: Uses the new_task tool to send the specific problem or subtask to "Think" mode.
+
+Think Mode's Process:
+
+Role Definition: "You are a specialized reasoning engine. Your primary function is to analyze a given task or problem, break it down into logical steps, identify potential challenges or edge cases, and outline a clear, step-by-step reasoning process or plan. You do NOT execute actions or write final code. Your output should be structured and detailed, suitable for an orchestrator mode (like Orchestrator Mode) to use for subsequent task delegation. Focus on clarity, logical flow, and anticipating potential issues. Use markdown for structuring your reasoning."
+
+Mode-specific Instructions: "Structure your output clearly using markdown headings and lists. Begin with a summary of your understanding of the task, followed by the step-by-step reasoning or plan, and conclude with potential challenges or considerations. Your final output via attempt_completion should contain only this structured reasoning. These specific instructions supersede any conflicting general instructions your mode might have."
+
+"Think" mode processes the subtask and returns a structured reasoning plan (e.g., Markdown headings, lists) via attempt_completion.
+
+Informed Delegation (Orchestrator):
+
+The Orchestrator receives and utilizes the detailed reasoning from "Think" mode. This structured plan informs the instructions for the actual execution subtask.
+
+For each subtask (either directly or after using "Think" mode), the Orchestrator uses the new_task tool to delegate to the appropriate specialized mode.
+
+Design & Architecture (Architect):
+
+If the subtask involves system design or architectural considerations, the Orchestrator delegates to the Architect mode.
+
+Architect mode provides high-level design documents or structural outlines.
+
+Code Generation (Code):
+
+Once a design or specific coding task is ready, the Orchestrator delegates to the Code mode.
+
+The Code mode generates the necessary code snippets or full modules.
+
+Debugging & Refinement (Debug):
+
+If errors or issues arise during testing or integration, the Orchestrator delegates to the Debug mode.
+
+Debug mode analyzes the code, identifies problems, and suggests fixes.
+
+Memory Bank Integration:
+
+Throughout the process, particularly from the Orchestrator mode, relevant plans, architectural decisions, and generated code can be stored in and retrieved from the Roo Memory Bank. This ensures continuity and allows for easy reference and iteration on previous work.
+
+I run pretty much everything through Orchestrator mode since the goal of this setup is to get the most reliable and accurate performance for no cost, with as little human involvement as possible. It needs to be understood that likely this will work better the more involved the human is in the process though. That being said, with good initial prompts (utilize the enhance prompt tool with Gemini or Deepseek models) and making use of a projectBrief Markdown file with Roo Memory Bank, and other Markdown planning files as needed, you can cut down quite a bit on your touch points especially for fairly straightforward projects.
+
+I do all this setup through the Roo Code extension UI. I set up configuration profiles called Gemini, OpenRouter - [Code-Debug-Plan] (For Code, Debug, and Architect modes respectively) and default the modes to use the correct profiles.
+
+Local Setup
+
+I do have a local version of this, but I haven't tested it as much. I use LM Studio with:
+
+The model from this post for Architect and Orchestrator mode.
+
+I haven't used the local setup since adding 'Think' mode but I imagine a small DeepSeek thinking model would work well.
+
+I use qwen2.5-coder-7b-instruct-mlx or nxcode-cq-7b-orpo-sota for Code and Debug modes.
+
+I use qwen/qwen3-4b for Ask mode.
+
+I currently just have two configuration profiles for local called Local (Architect, Think, Code, and Debug) and Local - Fast (Ask, sometimes Code if the task is simple). I plan on updating them at some point to be as robust as the OpenRouter/Gemini profiles.
+
+Setting Up the "Think" Mode
+
+"
+
+
+
+
+### REDDIT THREAD COMMENTS ###
+
+"
+Avatar de u/evia89
+evia89
+•
+hace 9 d
+For 0$ setup nothing beats:
+
+Windsurfer as base for autocomplete
+
+Compile PRD in ai studio with 2.5 pro anwering AI questions and refining it
+
+Get RooRoo pack
+
+Set planner as DS R1, rest of models are mix of flash 2.5 and DS R1. I like 4.1 from copilot but its $10
+
+Split PRD into epics and stories. Then use planner to to create a high-level technical design and application structure
+
+Then you can start semi auto coding
+
+I dont like auto memory bank much. Usually I repomix (vs code plugin) my code to ai studio and ask it to update my old shit schemes. We also got codebase search, it helps llm find stuff
+
+
+
+Upvote
+23
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 9 d
+The PRD flow is a good point and something I recommend and do. I’ll add that to the gist. Sometimes I’ve found that doing everything with R1 can cause it to overthink and get stuck and it works better to use a simpler model sometimes.
+
+Using Windsurf or something for autocomplete is probably a good addition, but I like not working Roo into another ecosystem. That’s just me though.
+
+There’s probably a lot of memory systems that could be good. This is the first one I tried and I saw a difference opposed to none. Key point is, use one.
+
+I haven’t tried Roo Roo. I’ll add that to the list of things to try at the bottom of the gist
+
+
+Upvote
+4
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+ag0x00
+•
+hace 8 d
+@evia89 This rooroo? https://github.com/marv1nnnnn/rooroo
+
+
+
+Upvote
+3
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/evia89
+evia89
+•
+hace 8 d
+yep
+
+
+Upvote
+3
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Kepler_MLG
+•
+hace 4 d
++1
+Giving the PRD to Roo Code + Rooroo orchestrator is the absolute best combination I've tried so far; And I've tried a whole lot of them Copilot, Cursor, Bolt, etc.
+
+Open source is the future!!
+
+rooroo:
+https://github.com/marv1nnnnn/rooroo
+
+
+Upvote
+3
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Donnybonny22
+•
+hace 9 d
+What is PRD?
+
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 9 d
+Product Requirements Document. It’s a type of document that product managers have been giving to engineers for years to define requirements from a business perspective.
+
+
+
+Upvote
+4
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Donnybonny22
+•
+hace 9 d
+Ah I see. I am from Germany and we call that lastenheft
+
+
+
+Upvote
+3
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 9 d
+Permission to force my PM to call it “lastenheft” from now on?
+
+
+
+Upvote
+10
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Donnybonny22
+•
+hace 9 d
+Sure thing
+
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 9 d
+Dope
+
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+EinArchitekt
+•
+hace 5 d
+After you got Lastenheft integrated you could also look into his lil bro Pflichtenheft.
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Viktor_Bujoleais
+•
+hace 7 d
+You mean Hochdetailliertesproduktanforderungsspezifikationsdokument ? :-)
+
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 5 d
+God I love this app
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+BoJackHorseMan53
+•
+hace 6 d
+Supermaven also provides free autocomplete and it's the fastest in the market. And you don't have to switch your ide just to get autocomplete.
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/evia89
+evia89
+•
+hace 6 d
+Supermaven
+
+is dead, no longer updates. Another free alternative is augment autocomplete
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/Jealous-Wafer-8239
+Jealous-Wafer-8239
+•
+hace 14 h
+Anddddd they got ditched by Authropic team.
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/evia89
+evia89
+•
+hace 7 h
+And? For 0$ you cant expect any sonnet
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/Cobuter_Man
+Cobuter_Man
+•
+hace 9 d
+Ive actually created smth very similar, not explicitly for roo code but a general use workflow where each chat session ( agent ) gets their own dedicated role with:
+
+a manager agent ( high level planning and task assignment prompt creation)
+
+implementation agents ( code )
+
+other specialized agents ( like debugger, tutor etc )
+
+Why dont you give it a quick look, it has many similarities w ur concept workflow. Its free and open source and it would benefit if ppl like u w similar ideas would contribute to improve it!
+
+https://github.com/sdi2200262/agentic-project-management
+
+
+
+Upvote
+8
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 9 d
+Awesome I’ll take a look!
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+ag0x00
+•
+hace 8 d
+•
+Editado hace 8 d
+Somewhere between this, Rooroo, rUv’s SPARC, and Boomerang tasks, there exists a perfect configuration, although with a very short shelf life perhaps.
+
+I like having predefined tasks, minimalist requirement definitions and logging, and passing e2e tests before considering a task complete.
+
+I still haven’t found the one unified, perfectly polished setup but I’m sure it’s just a matter of time and collaboration.
+
+
+
+Upvote
+7
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+clduab11
+•
+hace 8 d
+•
+Editado hace 6 d
+I found mine. Open VSCode
+
+npx create-sparc init, then ...
+
+Go to Edit in the new modes, and use a custom LLM with the Google Prompt Engineering Whitepaper as a knowledge stack to pull from with an LLM whose context is 1M+ to include sysprompts, and Mode-Specific Custom Instructions.
+
+Have Roo set up MCP servers (mine include GitHub, Tavily, Firecrawl, Puppeteer, Filesystem, Supabase, Ask Perplexity, Sequential Thinking, Filesystem, Git Tools, Redis, and Mem0.)
+
+Change to SPARC Orchestrator mode, have a custom-engineered prompt by the LLM of your choice, and watch it go to toooooooooooown.
+
+I'll never, EVER look back.
+
+Granted, this is definitely NOT free (you could make it very low cost but would probs perform very poorly); though could be with a powerful enough computer (though ouch your wallet).
+
+ETA: Can't emphasize enough on short shelf life for those who are reading this convo. YOU MUST STAY AGILE. Do NOT get married to any one platform/config or another without knowing the core mechanics, you will get what feels like 5 minutes of work done before shit changes and you're reconfig'ing all over again.
+
+
+
+Upvote
+3
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+ag0x00
+•
+hace 6 d
+Another comment is that Context7 MCP (https://github.com/upstash/context7) also feels like a must, especially for Next.js projects.
+
+
+
+Upvote
+3
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+clduab11
+•
+hace 6 d
+I def asked about this in our chat, cause I wanna know more about this and why it's so impactful for Next.js; I deleted it and I'll reimplement if you think I should.
+
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+ag0x00
+•
+hace 6 d
+It makes sure the latest documentation is always used and reduced errors resulting from outdated syntax.
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/deadcoder0904
+deadcoder0904
+•
+hace 3 d
+Has nothing to do with Next.js. It just gets latest documentation.
+
+So if some new library releases new features, then the LLM won't know but Context7 can get the new doc.
+
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+clduab11
+•
+hace 3 d
+Ahhhh even better! I put it back the other morning; I’ll be sure to work in a “scan for new or updated library changes against what’s currently in the project’s code base using Context7 MCP” or something in my MCP Integration Roo mode.
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/deadcoder0904
+deadcoder0904
+•
+hace 3 d
+Naah no need to be so complex, whenever you are adding a new feature just say "use context7" and it works.
+
+For eg, I was updating Tailwind v3 to v4 & it was a breaking change. So you can do "update tailwind v3 to v4 in the whole project using context7."
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+ag0x00
+•
+hace 7 d
+gemini-2.5-flash-preview-05-20 is free (unless you have a Pro account, LOL), and is excellent for thinking. I use it for research, architecture, orchestration, and debugging. Much better than Perplexity for planning, IMHO.
+
+For coding, I eat the cost of Claud 4, but the results are very. And switching between models helps with throttling.
+
+The trick in my experience is to never leave it completely on autopilot without manual review. It can be frustrating to watch it drain your account because it decided that replacing a software package needs a conduct/cost benefit analysis with a 7 year outlook.
+
+Insisting on smallest tasks possible, and embracing TDD is another thing that made a noticeable difference for me.
+
+Oh, and don't forget to update your Roo.
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+clduab11
+•
+hace 7 d
+True, I’ve been playing around with free configurations and white isn’t perfect, it’s operable enough. It just takes a lot more digging into the nuts and bolts; i.e., more configuration between the modes that are Gemini-specific. For example; I’ve been using the 2.5 Pro Cached 05/06 to “try” SPARC in a free configuration and it works … okay.
+
+Btw, what was the update they did for 05/20? Did they update the cached 2.5 Pro? Wait nvm, I forget the 05/20 is the uncached version IIRC
+
+But otherwise, for my paid use cases I call my Gemini APIs through GCP, so mine are definitely NOT free as my very painful Google invoice reflected last month 🤣🤣.
+
+I also am not a fan of unitary model control split over different roles. While I’m sure Roo caches all that and manages the spillover properly, my SPARC uses different models from different providers because it’ll catch what others miss (like when Gemini 2.5 Pro Cached has started to butt up against its window and crashes on tool calls). Variety, spice of life and all (just my $0.02).
+
+I think in my SPARC right now I call gpt-4.1, Sonnet 4 Thinking, Opus 4 Thinking, Gemini 2.5 Pro Cached 05/06, GPT-4o, Llama3.1-405B, and one or two others. I’ll switch them every now and again.
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+ag0x00
+•
+hace 6 d
+In your experience, does either Firecrawl or Puppeteer get more use than the other? Any conflict? Do they complement each other?
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+clduab11
+•
+hace 6 d
+I opened the char with you because diarrhea of the fingers hahahahahaha. But I didn’t answer this question.
+
+interestingly enough, it doesn’t really use Puppeteer as much as it does Roo’s own MCP browser. Puppeteer is more for an extension I run on my Comet browser (I’ve been beta testing Perplexity’s Comet for a few months). MCP Superassistant takes my Roo MCP settings and proxies them through an extension, that then acts as an interrupt to send the prompt out to the MCP tools for ChatGPT, Claude, Perplexity, or Gemini. So Puppeteer I have more for THAT than for Roo Code.
+
+It’ll use both Firecrawl and Tavily equally though, but you have to prompt it specifically. If you let it drive on its own, it actually uses Tavily more than anything else. I have a dozen MCP servers and I specifically call the tools or tell it to use a combination of tools (for example, Supabase Admin mode in my Roo Code uses Supabase MCP to do SQL stuff after I’ve given it my Supabase creds).
+
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+ag0x00
+•
+hace 6 d
+Neato.
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 8 d
+This is the way
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/kiloCode
+kiloCode
+•
+Patrocinado
+
+Kilo Code: prueba programar con la ayuda de un equipo entero de agentes IA, directamente en VS Code.
+Instalar
+kilocode.ai
+Thumbnail image: Kilo Code: prueba programar con la ayuda de un equipo entero de agentes IA, directamente en VS Code.
+Avatar de u/jakouillee
+jakouillee
+•
+hace 5 d
+Here a full agentic agent to develop a full application from the idea to the market release strategy
+
+Definitely not cheap if you use it exclusively but very good source of inspiration on the way it is done. Lot of files can be used as a reference if you want to build your app by yourself using LLM for cost efficiency
+
+https://github.com/DafnckStudio/DafnckMachine-v3.1/
+
+
+
+Upvote
+3
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+martexxNL
+•
+hace 4 d
+That looks awesome
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+mhphilip
+•
+hace 9 d
+Thanks for the thorough post! I might add a “Think mode” too..
+
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 9 d
+It's an easy add and worth it. I have noticed sometimes I have to be very explicit with Orchestrator with something like "Think through the steps and build a plan for implementation" even though I updated the custom prompts. But it's not really a hassle since your prompts should be pretty clear anyway
+
+
+Upvote
+5
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+MachineZer0
+•
+hace 8 d
+Memory bank is always inactive for me. I’ve gone through the instructions and even created the folder and empty files inside it. Any trick to getting it to work?
+
+I’ll probably try the MCP option soon.
+
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 8 d
+I had that happen too and it’s because if it ever can’t write to it, it flips it to inactive. I fixed it by adding a line to the Orchestrator prompt under instruction 2 for adding “an instruction for the subtask to update the memory_bank before completing the task.”
+
+After that I went to the Architect or Code mode and typed “UMB” (update memory bank) and it flipped it to active and it’s been good ever since
+
+
+Upvote
+3
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/DoW2379
+DoW2379
+•
+hace 8 d
+Are DeepSeek V3 0324 or Qwen3 235B A22B working well coding? Are they better at it than Gemini 2.5 pro?
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/wokkieman
+wokkieman
+•
+hace 8 d
+No, but different price class
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 8 d
+Not “better” per se but probably just as or more appropriate than Gemini for some tasks. I used to always use Gemini for everything on my Cursor instance at work, but then the requests got so slow (the only place I actually care about that), that I started trying some of the other models and realized it was probably overkill to use Gemini so much.
+
+Yes I would say they are good at coding depending on the task. If you want to run things for free, you’ll have to play with it a little bit. I feel like the pursuit of the “one shot” setup is a little mistaken.
+
+I’d rather have something dependable and cost effective that requires a little input now and then than something incredibly expensive that codes a dubious “one shot” application. I’ve tried those and they are never actually usable in any real world scenario.
+
+To answer your question on my cross post, don’t try Gemini on OpenRouter. You’ll get rate limited almost immediately. I call out in the post and gist that you should use the Google AI Studio API
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/Warp_DotDev
+Warp_DotDev
+•
+Patrocinado
+
+Never forget a terminal command or struggle with syntax again. Type in natural language, save workflows, even delegate tasks to AI. Try Warp today.
+Never forget a terminal command or struggle with syntax again. Type in natural language, save workflows, even delegate tasks to AI. Try Warp today.
+Never forget a terminal command or struggle with syntax again. Type in natural language, save workflows, even delegate tasks to AI. Try Warp today.
+Never forget a terminal command or struggle with syntax again. Type in natural language, save workflows, even delegate tasks to AI. Try Warp today.
+Never forget a terminal command or struggle with syntax again. Type in natural language, save workflows, even delegate tasks to AI. Try Warp today.
+Never forget a terminal command or struggle with syntax again. Type in natural language, save workflows, even delegate tasks to AI. Try Warp today.
+Never forget a terminal command or struggle with syntax again. Type in natural language, save workflows, even delegate tasks to AI. Try Warp today.
+
+warp.dev
+Avatar de u/Significant-Tip-4108
+Significant-Tip-4108
+•
+hace 9 d
+Thanks for sharing, good stuff.
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 9 d
+No problem let me know if it’s helpful or if you find something in it that doesn’t work well and share why. Always looking for other perspectives.
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+bahwi
+•
+hace 9 d
+Is LLM Pool an extension or separate app?
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 9 d
+I assume you’re referring to LM Studio. It’s a separate app to run on your desktop. Similar to Ollama but with more control over the models and settings (temperature, cache quantization, etc)
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+bahwi
+•
+hace 9 d
+Ah I see. Your code mode mentions LLM Pool and I was curious if it hits multiple models in a conversation style to come up with the best result or something.
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 9 d
+Oh!! I’m sorry I misunderstood. By LLM Pool I mean the list of LLM models I choose from for that mode.
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+bahwi
+•
+hace 9 d
+All good! Thanks for the clarification.
+
+I've been manually feeding from gemini and devstral / deepseek to get a piece of code working when a single model can't and been having luck. Curious if it was automated and I just didn't know yet, haha
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 9 d
+So in a way I do automate it by making the different profiles that I can apply to any mode for a one off change. So for instance, maybe I’ll have Code mode defaulted to a Qwen model, but maybe it gets a little stuck and I realize DeepSeek might be better for this task. I can just change the current profile Code is using to one that uses DeepSeek or maybe Gemini or whatever profile I have set up
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+bahwi
+•
+hace 9 d
+Hmm. I wonder if I could set up different coders and tell it to do pair programming when encountering an error....
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 9 d
+The sky is kind of the limit with the modes. I would probably tweak the Code prompt to have it defer to the Debug mode when it gets stuck, and then tweak the Debug prompt to pass it back to the Code mode when it fixes the issue and have a higher reasoning model for Debug.
+
+Or add the same instruction to Debug and Code mode to consult the custom Thinking mode when they are stuck. Lots of possibilities
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/salty2011
+salty2011
+•
+hace 8 d
+Actually now that you mention LLM Pool.
+
+Would be cool if Roo could allow associating several models to a profile with a preference and switching logic. Ie when rate limit reach switch, or if x amount of errors switch and so on.
+
+Def could see some use cases
+
+Go one further, some sort of CostBased Prompt execution…
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 8 d
+Yeah I’ve thought of that. Building a customizable auto switching setting for any agentic assistant like that would be a huge win
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/CoqueTornado
+CoqueTornado
+•
+hace 9 d
+how do you make Qwen3 235B A22B to /no_think? because it will be really slow. Also deepseek v3 is slow due to the latency. Devstral is neat anyhow.
+
+you said: LLM: Gemini (via Google AI Studio API Key) . But... that is... ok, is free again? ok. Good to know. By using it via openrouter I understand. Which model do you use? the 2.0 exp?
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/No_Quantity_9561
+No_Quantity_9561
+•
+hace 9 d
+Insignia de perfil para el logro 1% de más votados 1% de más votados
+This is how you unlock /no_think mode in Qwen3 235B A22B :
+
+https://www.reddit.com/r/RooCode/comments/1kj68p6/comment/mrny20x/
+
+
+
+Upvote
+4
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/CoqueTornado
+CoqueTornado
+•
+hace 9 d
+are you sure 100% that the gemini one is free?
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 8 d
+2.0 flash preview has been free for me for the past week at least. You have to use it through the Google AI Studio API not through OpenRouter
+
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/CoqueTornado
+CoqueTornado
+•
+hace 7 d
+but is the flash 2.0... is it strong enough to do the Orchestrator mode? I know your workflow: For any complex subtask that requires detailed planning, analysis, or anticipation of edge cases before execution, the Orchestrator first delegates to the custom "Think" mode.
+
+So you need 2... mmhmm... maybe it is faster maybe it is slower than let's say place Mai-DS, that sometimes it doesn't think at all and sometimes it has to think, and is quite better than gemini flash 2.0 [is just a R1 in steroids, not R1.1 but hey is fast]
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 7 d
+I use the same Gemini model for Orchestrator and Think. I’ve had no issues, though I think there is a 2.5 preview model that’s free also.
+
+Short answer, yes it’s strong enough. These models are very good at this point, I think people need to let go of the idea that just because there’s a new or “better” one that the others aren’t still good
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/CoqueTornado
+CoqueTornado
+•
+hace 9 d
+awh interesting the /think way; maybe roocode could tweak this feature in the boxlist of thinking modes
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/jervinkhoo
+jervinkhoo
+•
+hace 8 d
+Ooooo
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/CoqueTornado
+CoqueTornado
+•
+hace 7 d
+Oooooo==> ^_^
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 9 d
+I believe I mention in the gist that if I want it to be faster I use Devstral but I’m not usually terribly concerned with speed since I’m trying to let it run on it’s own while I do something else (would not recommend for an important project or feature of course).
+
+So to answer, I don’t use the Qwen model without thinking. I use it if I need thinking, or maybe something like Qwen-2.5:7b instruct if I want speed + Qwen coding.
+
+Yes Gemini has been free for me, I’m using 2.0 flash preview 05-20 thinking
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/BackgroundBat7732
+BackgroundBat7732
+•
+hace 7 d
+This is a dumb, and offtopic question, but how do you create an LLM pool? Does this also work for fallback?
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 7 d
+Not dumb, someone else asked the same thing
+
+By “LLM Pool” I mean the list of LLM models I choose from for that mode.
+
+
+Upvote
+3
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/neilrjones
+neilrjones
+•
+hace 7 d
+Cool! Will check it out!
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/Interesting-Law-8815
+Interesting-Law-8815
+•
+hace 6 d
+How do you get $0 from Gemini and it be useful? Gives 429’s after about 5 minutes use.
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 6 d
+I explain it in the gist but it’s pretty clear here also. Only use it when necessary for planning modes and use it through Google AI Studio instead of OpenRouter
+
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/Interesting-Law-8815
+Interesting-Law-8815
+•
+hace 5 d
+How do you ensure Google doesn't bill you? If you send a request to Google and you exceed any quota then this starts to bill, and given 'think' modes uses lots of tokens you don't really explain how you ensure cost stays at $0
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 5 d
+You’re not required to provide a payment method. Just pick the free plan and create a project in GCP without billing enabled.
+
+Imagen del comentario
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/ECrispy
+ECrispy
+•
+hace 5 d
+thank you, lots of stuff here to read and learn
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/reckon_Nobody_410
+reckon_Nobody_410
+•
+hace 4 d
+Is this still working?
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 4 d
+It has been for me
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/reckon_Nobody_410
+reckon_Nobody_410
+•
+hace 4 d
+The gemini key is throwing rate limiting 😭
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 4 d
+Are you doing it through Google AI Studio or OpenRouter
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/reckon_Nobody_410
+reckon_Nobody_410
+•
+hace 4 d
+Google ai studio apikey is what I have created from dashboard. No openapi router
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 4 d
+Are you only using it for Orchestrator and Thinking mode?
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/reckon_Nobody_410
+reckon_Nobody_410
+•
+hace 4 d
+Yup only for orchastrator
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 4 d
+I’ll check in a bit if it still works for me
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/reckon_Nobody_410
+reckon_Nobody_410
+•
+hace 3 d
+Have you checked this?
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/livecodelife
+livecodelife
+PO
+•
+hace 3 d
+Yes, I am getting them now and then if orchestrator runs a lot of requests, so like at the start of a task maybe. But it retries once or twice on its own and then sorts itself out. Do you have retries set up?
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Más respuestas
+Avatar de u/rm-rf-rm
+rm-rf-rm
+•
+hace 3 d
+With AI studio going away, this will break soon?
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/johndeuff
+johndeuff
+•
+hace 2 d
+yes
+"

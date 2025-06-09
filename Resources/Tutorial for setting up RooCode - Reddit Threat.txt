@@ -1,0 +1,845 @@
+Thread link: https://www.reddit.com/r/RooCode/comments/1jjl3s9/anyone_interested_in_an_updated_tutorial_for/
+
+
+
+
+### Actual Reddit Post ###
+
+"
+Icono de r/RooCode
+Ir a RooCode
+r/RooCode
+•
+hace 3 m
+not_NEK0
+
+Anyone interested in an updated tutorial for setting up RooCode the best way possible
+Discussion
+Hey,
+I'm trying to make a tutorial about how to install the "good" setup for Roo Code on any project.
+I was wondering how many people it would help so I see if it's worth it.
+
+For anyone wondering, actually I use Roo Code with Deepseek V3 0324 for coding and R1 for planning (Architect mode).
+I'm also using Roo Flow for memory management. Actually i'm planning on adding MCPs (I don't really need them for now as i'm mostly trying to find the most stable way to use the new Deepseek v3 which is wild).
+
+"
+
+
+
+
+### REDDIT THREAD COMMENTS ###
+
+"
+Ordenar por:
+
+Mejores
+
+Buscar comentarios
+Expandir la búsqueda de comentarios
+Sección de comentarios
+Logical-Employ-9692
+•
+hace 3 m
+The most useful would be a current best practice on how to tackle context management. Using Roo Flow? Memory bank? MCP? How to keep RooCode on track across sessions.
+
+Another particularly helpful thing would be which models to start with for which modes or tasks. Maybe a set for “money is tight” and another set for “some else is paying”.
+
+
+
+Upvote
+7
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+not_NEK0
+PO
+•
+hace 2 m
+👌
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/maigpy
+maigpy
+•
+hace 3 m
+•
+Editado hace 3 m
+yes, yes, and yes. how does the roo code profile system fit in with the vs code profile system.?
+
+what are good multiple profiles e.g. cheap, mid, espensive, for each role.
+
+any custom roles?
+
+how to set it all up without UI - json only please.
+
+glama? openrouter? requesty? pros and cons?
+
+how to sync configs / profiles across installations. if not possible, at a minimum, backup restore strategies (save configs in git?)
+
+
+
+Upvote
+6
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+not_NEK0
+PO
+•
+hace 2 m
+I'll try to add all of this.
+
+
+Upvote
+3
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/nfrmn
+nfrmn
+•
+hace 3 m
+I would love a tutorial for setting up orchestrators and code reviewer agents!
+
+A video like a Loom or similar screenshare would be beneficial to a lot of people.
+
+
+
+Upvote
+4
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+enjoinick
+•
+hace 2 m
+Agreed!
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+not_NEK0
+PO
+•
+hace 2 m
+👍🏻
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/ClickUp_App
+ClickUp_App
+•
+Patrocinado
+
+The everything app, for work. Get everyone working in a single platform designed to manage any type of work.
+Más información
+clickup.com
+Thumbnail image: The everything app, for work. Get everyone working in a single platform designed to manage any type of work.
+IJaaay
+•
+hace 3 m
+Right now I try to use Gemini 2 Pro for architect/Orchestrator to destructure tasks and have it set to a custom temperature of somewhere around 0.8 and then I have 3.5 Sonnet with a temperature of about 0.2 to do the tasks broken down by Gemini. I'd be happy to know if there's a way to optimize things in two areas. First would be getting things done right faster. Second would be optimizing token usage which in part goes with the first one.
+
+
+
+Upvote
+3
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+not_NEK0
+PO
+•
+hace 3 m
+I don't think you can optimize token usage by much except if you directly contribute to making RooCode better or the API you're using (which for most people isn't really a thing). There are some tips like using caching but Roo Code already does all of that so there is not a lot of thing you can do on your side on this part.
+
+Where I think you can better use your money is by not using models which cost a lot like 3.5 Sonnet. Actually the new Deepseek v3 0324 is really close to Sonnet 3.7 when talking of coding. It's not a the point of beating it I must say but it's close enough to switch. You go from 3$/M to 0.27$/M for input and from 15$/M to 1.1$/M for output. If you add Roo Flow and activate some experimental options to make the AI use more token for better contextability, I think you still divided the cost by at least 8 and still got some really good assistance.
+
+
+Upvote
+5
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/evia89
+evia89
+•
+hace 3 m
+Did u experiment with new_task? Example
+
+{
+  "customModes": [
+    {
+      "slug": "Orchestrator",
+      "name": "Orchestrator",
+      "roleDefinition": "You are Roo orchestrator, you create and assign subtasks using new_task tool to other agents and keep track of progress toward user goal. The subtasks that you assign should be small and well defined, with explicit acceptance crietria and you should instruct the agent to report back to you with the subtask status.",
+      "customInstructions": "Upon task initiation, you will:\n1. Conduct comprehensive requirement analysis with technical constraint mapping\n2. Probe for clarity where specifications remain ambiguous or incomplete\n3. Architect the solution through systematic task decomposition into discrete, manageable components\n4. Deploy the new_task tool to assign each component to specialized technical experts\n5. Apply rigorous quality assurance against established acceptance criteria\n6. Progress seamlessly when deliverables meet standards\n7. When deliverables fall short, deliver concise remediation briefs containing:\n   - Specific deviation analysis\n   - Potential downstream consequences\n   - Actionable rectification approaches\n   - Evidence-based recommendation for optimal resolution\n8. For larger tasks create a context markdown file which you will pass on to the subtask and update (if needed) after the task is finished\nYou serve exclusively as the orchestration layer, creating only documentation for project management - never producing code directly. You maintain unwavering technical precision while optimizing workflow efficiency through the entire development lifecycle. When analyzing project requirements, be thorough and precise, identifying all technical constraints and dependencies. When decomposing tasks, ensure each component is clearly defined with specific acceptance criteria. When delegating tasks using the new_task tool, choose the most appropriate mode for each technical expert based on the task requirements.",
+      "groups": [
+        "read",
+        [
+          "edit",
+          {
+            "fileRegex": "\\.md$",
+            "description": "Markdown files only"
+          }
+        ],
+        "command"
+      ],
+      "source": "project"
+    }
+  ]
+}
+
+Upvote
+4
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+not_NEK0
+PO
+•
+hace 3 m
+If you want to try it, ask the V3 to make a portfolio with some cool animations (make sure to deactivate Deepthink to get V3 and not R1) :
+https://chat.deepseek.com/
+
+
+Upvote
+3
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Yes_but_I_think
+•
+hace 3 m
+Copy the system prompt of one mode, paste in 3.7 thinking. Ask it to shorten by 30% while preserving syntax and rules.
+
+It will shorten it to 20% in practice. Create new equivalent mode and paste it on custom system prompt. Repeat for all modes.
+
+Add curation instruction at the last in each mode to never switch to standard modes … done. I have had no issues in instruction following. Works with 1.5k tokens in each mode.
+
+
+Upvote
+3
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/joey2scoops
+joey2scoops
+•
+hace 2 m
+What are your results like with those temperature settings?
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/tradegator
+tradegator
+•
+hace 3 m
+Thumbs up for an improved tutorial! Thanks in advance.
+
+
+Upvote
+3
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+blu3soup
+•
+hace 3 m
+
+
+
+Upvote
+3
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+not_NEK0
+PO
+•
+hace 2 m
+it's coming, I just need some time
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/flydotio
+flydotio
+•
+Patrocinado
+
+Try Fly.io for Free
+Más información
+fly.io
+Thumbnail image: Try Fly.io for Free
+StrangeJedi
+•
+hace 3 m
+Yes please! I'm switching over from Cline and would love a tutorial.
+
+
+Upvote
+3
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+GracefulAssumption
+•
+hace 3 m
+Yes please. And what's your experience with roocode vs cline?
+
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+not_NEK0
+PO
+•
+hace 2 m
+I prefer roo code for the extra features to be honest.
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+TangoRango808
+•
+hace 3 m
+Please make the tutorial
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Ai_Pirates
+•
+hace 3 m
+That would be cool, please share it
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+not_NEK0
+PO
+•
+hace 3 m
+I will start working on it this night! I've read most of the comments and will TRY to adress every point
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/ashwin1231
+ashwin1231
+•
+hace 2 m
+Deepseek V3 0324 is not available on ollama. how to run it locally for RooCode ?
+
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+not_NEK0
+PO
+•
+hace 2 m
+Having a 10k$ PC is a good start. We need to wait for distilled models for local models if you don't want to spend this much. I would recommend using API for now. Deepinfra is doing a good job right now
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/Evening_Economy3469
+Evening_Economy3469
+•
+hace 2 m
+
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+not_NEK0
+PO
+•
+hace 2 m
+i'll try my best
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+not_NEK0
+PO
+•
+hace 2 m
+It may take more time than expected as a lot of people want a lot of different things in it.
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/Freedom_Addict
+Freedom_Addict
+•
+hace 2 m
+Yes definitely !
+
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+not_NEK0
+PO
+•
+hace 2 m
+It's done
+
+
+
+Upvote
+2
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/Freedom_Addict
+Freedom_Addict
+•
+hace 2 m
+Dope thx, I’m reading it now
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+gabealmeida
+•
+hace 3 m
+Yes, please make a tutorial. I couldnt find any on youtube on how to set up rooflow.
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/NewEraFresh
+NewEraFresh
+•
+hace 3 m
+Just paste in the repo url into code agent and ask it to set it up :)
+
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+gabealmeida
+•
+hace 3 m
+THANK YOU!!!!
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+randemnes
+•
+hace 3 m
+Yes please, I was just looking at using deepseek but would love to hear your thoughts and best ways to use all these tools you mentioned. I am burning too many $$$ using Claude, so having some other strategies would be awesome. Thank you!!
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/Specialist_Ad_7501
+Specialist_Ad_7501
+•
+hace 3 m
+a tutorial would be great - include github best practice as well, live server, browser use etc. I would be interested in that.
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+fubduk
+•
+hace 2 m
+That is an excellent idea. Using DeepSeek in the way you are would be a great start.
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+demosthenes131
+•
+hace 2 m
+Yes
+
+
+Upvote
+1
+
+Downvote
+
+Responder
+reply
+
+Premiar
+
+Compartir
+Compartir
+
+Avatar de u/m_zafar
+m_zafar
+•
+hace 2 m
+please do it, I just started using today, not sure about how to perfectly set it up in terms of all the settings it has.
+
+"
