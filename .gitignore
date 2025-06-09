@@ -1,0 +1,8 @@
+# Ignore virtual environment directories
+ad_venv/
+
+# Ignore Environmental Variables File
+*.env
+
+# Ignore specific files
+/Tests/ReAct Framework/langchaintest.json
