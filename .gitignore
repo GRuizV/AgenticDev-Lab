@@ -6,3 +6,4 @@ ad_venv/
 
 # Ignore specific files
 /Tests/ReAct Framework/langchaintest.json
+/Tests/(Nima) PBA/Test PDFs
