@@ -1,0 +1,123 @@
+{
+  "test_summary": {
+    "timestamp": "2025-06-17T21:52:44.842911",
+    "total_files_tested": 6,
+    "successful_tests": 6,
+    "total_testing_time_seconds": 19.904879
+  },
+  "individual_results": {
+    "MC - FEB-2025.pdf": {
+      "file_name": "MC - FEB-2025.pdf",
+      "file_path": "C:\\Users\\USUARIO\\GR\\Software Development\\Agentic Dev\\Tests\\(Nima) PBA\\test #2\\tests\\..\\..\\Test PDFs\\MC - FEB-2025.pdf",
+      "file_size_mb": 0.07,
+      "test_timestamp": "2025-06-17T21:52:44.845895",
+      "success": true,
+      "expenses_found": 1,
+      "sample_expenses": [
+        [
+          "31/01/25",
+          "PAGO ATH CANALES ELECTRONICOS,",
+          "$0.00"
+        ]
+      ],
+      "error_message": null,
+      "processing_time_seconds": 2.09,
+      "card_type": "MC",
+      "month": "FEB",
+      "total_amount": 0.0
+    },
+    "MC - MAR-2025.pdf": {
+      "file_name": "MC - MAR-2025.pdf",
+      "file_path": "C:\\Users\\USUARIO\\GR\\Software Development\\Agentic Dev\\Tests\\(Nima) PBA\\test #2\\tests\\..\\..\\Test PDFs\\MC - MAR-2025.pdf",
+      "file_size_mb": 0.07,
+      "test_timestamp": "2025-06-17T21:52:46.933115",
+      "success": true,
+      "expenses_found": 0,
+      "sample_expenses": [],
+      "error_message": null,
+      "processing_time_seconds": 2.68,
+      "card_type": "MC",
+      "month": "MAR",
+      "total_amount": 0
+    },
+    "MC - ABR-2025.pdf": {
+      "file_name": "MC - ABR-2025.pdf",
+      "file_path": "C:\\Users\\USUARIO\\GR\\Software Development\\Agentic Dev\\Tests\\(Nima) PBA\\test #2\\tests\\..\\..\\Test PDFs\\MC - ABR-2025.pdf",
+      "file_size_mb": 0.07,
+      "test_timestamp": "2025-06-17T21:52:49.617690",
+      "success": true,
+      "expenses_found": 2,
+      "sample_expenses": [
+        [
+          "21/04/25",
+          "HOMECENTER VTAS A DIST BOGOTA",
+          "$704,700.00"
+        ],
+        [
+          "02/04/25",
+          "PAGO ATH CANALES ELECTRONICOS,",
+          "$0.00"
+        ]
+      ],
+      "error_message": null,
+      "processing_time_seconds": 3.37,
+      "card_type": "MC",
+      "month": "ABR",
+      "total_amount": 704700.0
+    },
+    "VS - FEB-2025.pdf": {
+      "file_name": "VS - FEB-2025.pdf",
+      "file_path": "C:\\Users\\USUARIO\\GR\\Software Development\\Agentic Dev\\Tests\\(Nima) PBA\\test #2\\tests\\..\\..\\Test PDFs\\VS - FEB-2025.pdf",
+      "file_size_mb": 0.1,
+      "test_timestamp": "2025-06-17T21:52:52.992878",
+      "success": true,
+      "expenses_found": 1,
+      "sample_expenses": [
+        [
+          "24/01/25",
+          "| THEBARBERFACTORY CALI",
+          "$38,000.00"
+        ]
+      ],
+      "error_message": null,
+      "processing_time_seconds": 3.58,
+      "card_type": "VS",
+      "month": "FEB",
+      "total_amount": 38000.0
+    },
+    "VS - MAR-2025.pdf": {
+      "file_name": "VS - MAR-2025.pdf",
+      "file_path": "C:\\Users\\USUARIO\\GR\\Software Development\\Agentic Dev\\Tests\\(Nima) PBA\\test #2\\tests\\..\\..\\Test PDFs\\VS - MAR-2025.pdf",
+      "file_size_mb": 0.1,
+      "test_timestamp": "2025-06-17T21:52:56.571795",
+      "success": true,
+      "expenses_found": 0,
+      "sample_expenses": [],
+      "error_message": null,
+      "processing_time_seconds": 3.16,
+      "card_type": "VS",
+      "month": "MAR",
+      "total_amount": 0
+    },
+    "VS - ABR-2025.pdf": {
+      "file_name": "VS - ABR-2025.pdf",
+      "file_path": "C:\\Users\\USUARIO\\GR\\Software Development\\Agentic Dev\\Tests\\(Nima) PBA\\test #2\\tests\\..\\..\\Test PDFs\\VS - ABR-2025.pdf",
+      "file_size_mb": 0.15,
+      "test_timestamp": "2025-06-17T21:52:59.729059",
+      "success": true,
+      "expenses_found": 1,
+      "sample_expenses": [
+        [
+          "02/04/25",
+          "| PAGO ATH CANALES ELECTRONICOS",
+          "$0.00"
+        ]
+      ],
+      "error_message": null,
+      "processing_time_seconds": 5.01,
+      "card_type": "VS",
+      "month": "ABR",
+      "total_amount": 0.0
+    }
+  }
+}

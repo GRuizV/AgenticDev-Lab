@@ -1,0 +1,123 @@
+{
+  "test_summary": {
+    "timestamp": "2025-06-17T21:24:04.775483",
+    "total_files_tested": 6,
+    "successful_tests": 6,
+    "total_testing_time_seconds": 21.111764
+  },
+  "individual_results": {
+    "MC - FEB-2025.pdf": {
+      "file_name": "MC - FEB-2025.pdf",
+      "file_path": "Test PDFs\\MC - FEB-2025.pdf",
+      "file_size_mb": 0.07,
+      "test_timestamp": "2025-06-17T21:24:04.777483",
+      "success": true,
+      "expenses_found": 1,
+      "sample_expenses": [
+        [
+          "31/01/25",
+          "PAGO ATH CANALES ELECTRONICOS,",
+          "$0.00"
+        ]
+      ],
+      "error_message": null,
+      "processing_time_seconds": 2.99,
+      "card_type": "MC",
+      "month": "FEB",
+      "total_amount": 0.0
+    },
+    "MC - MAR-2025.pdf": {
+      "file_name": "MC - MAR-2025.pdf",
+      "file_path": "Test PDFs\\MC - MAR-2025.pdf",
+      "file_size_mb": 0.07,
+      "test_timestamp": "2025-06-17T21:24:07.764794",
+      "success": true,
+      "expenses_found": 0,
+      "sample_expenses": [],
+      "error_message": null,
+      "processing_time_seconds": 2.83,
+      "card_type": "MC",
+      "month": "MAR",
+      "total_amount": 0
+    },
+    "MC - ABR-2025.pdf": {
+      "file_name": "MC - ABR-2025.pdf",
+      "file_path": "Test PDFs\\MC - ABR-2025.pdf",
+      "file_size_mb": 0.07,
+      "test_timestamp": "2025-06-17T21:24:10.595185",
+      "success": true,
+      "expenses_found": 2,
+      "sample_expenses": [
+        [
+          "21/04/25",
+          "HOMECENTER VTAS A DIST BOGOTA",
+          "$704,700.00"
+        ],
+        [
+          "02/04/25",
+          "PAGO ATH CANALES ELECTRONICOS,",
+          "$0.00"
+        ]
+      ],
+      "error_message": null,
+      "processing_time_seconds": 3.28,
+      "card_type": "MC",
+      "month": "ABR",
+      "total_amount": 704700.0
+    },
+    "VS - FEB-2025.pdf": {
+      "file_name": "VS - FEB-2025.pdf",
+      "file_path": "Test PDFs\\VS - FEB-2025.pdf",
+      "file_size_mb": 0.1,
+      "test_timestamp": "2025-06-17T21:24:13.873976",
+      "success": true,
+      "expenses_found": 1,
+      "sample_expenses": [
+        [
+          "24/01/25",
+          "| THEBARBERFACTORY CALI",
+          "$38,000.00"
+        ]
+      ],
+      "error_message": null,
+      "processing_time_seconds": 3.68,
+      "card_type": "VS",
+      "month": "FEB",
+      "total_amount": 38000.0
+    },
+    "VS - MAR-2025.pdf": {
+      "file_name": "VS - MAR-2025.pdf",
+      "file_path": "Test PDFs\\VS - MAR-2025.pdf",
+      "file_size_mb": 0.1,
+      "test_timestamp": "2025-06-17T21:24:17.558001",
+      "success": true,
+      "expenses_found": 0,
+      "sample_expenses": [],
+      "error_message": null,
+      "processing_time_seconds": 3.32,
+      "card_type": "VS",
+      "month": "MAR",
+      "total_amount": 0
+    },
+    "VS - ABR-2025.pdf": {
+      "file_name": "VS - ABR-2025.pdf",
+      "file_path": "Test PDFs\\VS - ABR-2025.pdf",
+      "file_size_mb": 0.15,
+      "test_timestamp": "2025-06-17T21:24:20.875889",
+      "success": true,
+      "expenses_found": 1,
+      "sample_expenses": [
+        [
+          "02/04/25",
+          "| PAGO ATH CANALES ELECTRONICOS",
+          "$0.00"
+        ]
+      ],
+      "error_message": null,
+      "processing_time_seconds": 5.0,
+      "card_type": "VS",
+      "month": "ABR",
+      "total_amount": 0.0
+    }
+  }
+}
