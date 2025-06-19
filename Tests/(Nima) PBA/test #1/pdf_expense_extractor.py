@@ -251,7 +251,7 @@ def main():
     
     # Hardcoded PDF path (placeholder - user will provide actual path)
     # TODO: Replace this with the actual PDF file path
-    pdf_path = r"C:\Users\USUARIO\OneDrive\Nima Cloud\02 Desarrollo de Producto\PBA\POCs\LLM interpreta Extractos\Extractos\AvVillas\Visa\VS - ABR-2025.pdf"
+    pdf_path = r"C:\Users\USUARIO\GR\Software Development\Agentic Dev\Tests\(Nima) PBA\Test PDFs\AV - VS - 02 - FEB-2025.pdf"
     
     # For testing purposes, you can uncomment and modify this line:
     # pdf_path = input("Enter the path to your PDF file: ").strip()

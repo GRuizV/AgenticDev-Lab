@@ -9,7 +9,7 @@
 
 ## 🤖 AI Configuration
 - **Primary Mode**: 💻 Code - `anthropic/claude-sonnet-4`
-- **Cost**: $ 2.12 (It's probably some more than that)
+- **Cost**: $ 17.07 (It's probably some more than that)
 - **Token Usage**: 55,000 Tokens (28% of context)
 - **Sessions**: Multiple iterative development and testing sessions
 
