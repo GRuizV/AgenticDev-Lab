@@ -1,0 +1,2219 @@
+{
+  "bills": [
+    {
+      "bill_name": "AV - MC - 02 - FEB-2025",
+      "transactions": [
+        {
+          "date": "2025-01-31",
+          "description": "PAGO ATH CANALES ELECTRONICOS",
+          "amount": 0
+        },
+        {
+          "date": "2025-02-06",
+          "description": "MERCADO PAGO*TECNOPLAZ 760001CALI",
+          "amount": 115900
+        },
+        {
+          "date": "2025-02-10",
+          "description": "MERCPAGO*CRUZVERDEPAGO BARRANQUILLA",
+          "amount": 224180
+        },
+        {
+          "date": "2025-02-14",
+          "description": "CINECOLOMBIA BOGOTA",
+          "amount": 50000
+        },
+        {
+          "date": "2025-02-15",
+          "description": "PAYU*NETFLIX 110111BOGOTA",
+          "amount": 44900
+        }
+      ]
+    },
+    {
+      "bill_name": "AV - MC - 03 - MAR-2025",
+      "transactions": [
+        {
+          "date": "2025-03-01",
+          "description": "PAGO ATH CANALES ELECTRONICOS",
+          "amount": 0
+        },
+        {
+          "date": "2025-03-15",
+          "description": "PAYU*NETFLIX 110111BOGOTA",
+          "amount": 44900
+        }
+      ]
+    },
+    {
+      "bill_name": "AV - MC - 04 - ABR-2025",
+      "transactions": [
+        {
+          "date": "2025-04-02",
+          "description": "PAGO ATH CANALES ELECTRONICOS",
+          "amount": 0
+        },
+        {
+          "date": "2025-04-04",
+          "description": "MERCADO PAGO*CRUZVERDE BARRANQUILLA",
+          "amount": 228410
+        },
+        {
+          "date": "2025-04-04",
+          "description": "UBER RIDES 110111Bogota",
+          "amount": 9192
+        },
+        {
+          "date": "2025-04-08",
+          "description": "DLO*Didi 110111Bogota",
+          "amount": 10115
+        },
+        {
+          "date": "2025-04-08",
+          "description": "DLO*Didi 110111Bogota",
+          "amount": 12600
+        },
+        {
+          "date": "2025-04-09",
+          "description": "DLO*Didi 110111Bogota",
+          "amount": 9180
+        },
+        {
+          "date": "2025-04-15",
+          "description": "PAYU*NETFLIX 110111BOGOTA",
+          "amount": 44900
+        },
+        {
+          "date": "2025-04-20",
+          "description": "TU BOLETA 11001BOGOTA",
+          "amount": 49000
+        },
+        {
+          "date": "2025-04-21",
+          "description": "HOMECENTER VTAS A DIST BOGOTA",
+          "amount": 704700
+        }
+      ]
+    },
+    {
+      "bill_name": "AV - VS - 02 - FEB-2025",
+      "transactions": [
+        {
+          "date": "2025-01-24",
+          "description": "THE BARBER FACTORY CALI",
+          "amount": 38000
+        },
+        {
+          "date": "2025-01-25",
+          "description": "H M MALLPLAZA PLAZA DE CALI",
+          "amount": 64900
+        },
+        {
+          "date": "2025-01-25",
+          "description": "SC EL LIMONAR CALI",
+          "amount": 13900
+        },
+        {
+          "date": "2025-01-30",
+          "description": "STETIK DENT CALI",
+          "amount": 680000
+        },
+        {
+          "date": "2025-02-01",
+          "description": "PAGO ATH CANALES ELECTRONICOS",
+          "amount": 0
+        },
+        {
+          "date": "2025-02-01",
+          "description": "HOMECENTER CALI",
+          "amount": 64900
+        },
+        {
+          "date": "2025-02-03",
+          "description": "SUPER INTER UNICO SALO CALI",
+          "amount": 82954
+        },
+        {
+          "date": "2025-02-03",
+          "description": "TIENDA D1 VILLA DEL PR CALI",
+          "amount": 82550
+        },
+        {
+          "date": "2025-02-10",
+          "description": "SMART FIT METROPOLIS BOGOTA DC",
+          "amount": 79900
+        },
+        {
+          "date": "2025-02-11",
+          "description": "SC LA PRIMERA CALI",
+          "amount": 48700
+        },
+        {
+          "date": "2025-02-12",
+          "description": "TIENDA D1 VILLA DEL PR CALI",
+          "amount": 12040
+        },
+        {
+          "date": "2025-02-12",
+          "description": "CTRO DIAGNOST AUTOM VA CALI",
+          "amount": 302500
+        },
+        {
+          "date": "2025-02-18",
+          "description": "TIENDA D1 VAL CALI CALI",
+          "amount": 37410
+        },
+        {
+          "date": "2025-02-18",
+          "description": "LIBRERIA SAN PABLO CALI",
+          "amount": 29500
+        },
+        {
+          "date": "2025-02-21",
+          "description": "TIENDA D1 VILLA DEL PR CALI",
+          "amount": 19780
+        },
+        {
+          "date": "2025-02-21",
+          "description": "SUPER INTER UNICO SALO CALI",
+          "amount": 72840
+        },
+        {
+          "date": "2025-02-23",
+          "description": "SC CENTENARIO CALI",
+          "amount": 73087
+        },
+        {
+          "date": "2025-02-26",
+          "description": "SEGURO DE VIDA DEUDOR",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "bill_name": "AV - VS - 03 - MAR-2025",
+      "transactions": [
+        {
+          "date": "2025-03-01",
+          "description": "PAGO ATH CANALES ELECTRONICOS",
+          "amount": 0
+        },
+        {
+          "date": "2025-03-01",
+          "description": "HOTEL CASA GUADALUPE D CALI",
+          "amount": 47000
+        },
+        {
+          "date": "2025-03-01",
+          "description": "ORGANIZACION TERPEL S YUMBO",
+          "amount": 117153
+        },
+        {
+          "date": "2025-03-10",
+          "description": "SUPER INTER UNICO SALO CALI",
+          "amount": 52800
+        },
+        {
+          "date": "2025-03-10",
+          "description": "SMART FIT METROPOLIS BOGOTA DC",
+          "amount": 79900
+        },
+        {
+          "date": "2025-03-10",
+          "description": "TIENDA D1 VILLA DEL PR CALI",
+          "amount": 68570
+        },
+        {
+          "date": "2025-03-14",
+          "description": "EXITO WOW UNICALI CALI",
+          "amount": 66845
+        },
+        {
+          "date": "2025-03-21",
+          "description": "TIENDAS ARA CALI",
+          "amount": 47400
+        },
+        {
+          "date": "2025-03-21",
+          "description": "SUPER INTER UNICO SALO CALI",
+          "amount": 98782
+        },
+        {
+          "date": "2025-03-22",
+          "description": "KV GROUP SAS CALI",
+          "amount": 41600
+        },
+        {
+          "date": "2025-03-23",
+          "description": "HURTADO SOLARI CALI",
+          "amount": 40800
+        },
+        {
+          "date": "2025-03-23",
+          "description": "GREEN EDS PASOANCHO CALI",
+          "amount": 149610
+        },
+        {
+          "date": "2025-03-26",
+          "description": "SEGURO DE VIDA DEUDOR",
+          "amount": 0
+        },
+        {
+          "date": "2025-03-26",
+          "description": "INTERESES FACTURADOS",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "bill_name": "AV - VS - 04 - ABR-2025",
+      "transactions": [
+        {
+          "date": "2025-03-27",
+          "description": "TIENDA D1 VILLA DEL PR CALI",
+          "amount": 43920
+        },
+        {
+          "date": "2025-03-27",
+          "description": "SUPER INTER UNICO SALO CALI",
+          "amount": 29050
+        },
+        {
+          "date": "2025-03-29",
+          "description": "THE BARBER FACTORY CALI",
+          "amount": 55000
+        },
+        {
+          "date": "2025-03-29",
+          "description": "TIENDA D1 VILLA DEL PR CALI",
+          "amount": 16790
+        },
+        {
+          "date": "2025-03-30",
+          "description": "CREPES Y WAFFLES SANTA CALI",
+          "amount": 132600
+        },
+        {
+          "date": "2025-04-01",
+          "description": "TIENDA D1 CALI PRADOS CALI",
+          "amount": 30180
+        },
+        {
+          "date": "2025-04-01",
+          "description": "ANTIGUA CONTEMPORANEA CALI",
+          "amount": 64000
+        },
+        {
+          "date": "2025-04-02",
+          "description": "PAGO ATH CANALES ELECTRONICOS",
+          "amount": 0
+        },
+        {
+          "date": "2025-04-05",
+          "description": "BOLD*EDIFICIO MORROS E CARTAGENA",
+          "amount": 36000
+        },
+        {
+          "date": "2025-04-10",
+          "description": "DOLLARCITY UNICO CALI CALI",
+          "amount": 40500
+        },
+        {
+          "date": "2025-04-10",
+          "description": "EUROVIDRIOS Y ACCESORI CALI",
+          "amount": 90000
+        },
+        {
+          "date": "2025-04-10",
+          "description": "SMART FIT METROPOLIS BOGOTA DC",
+          "amount": 59900
+        },
+        {
+          "date": "2025-04-12",
+          "description": "HOMECENTER CALI SUR CALI",
+          "amount": 97700
+        },
+        {
+          "date": "2025-04-12",
+          "description": "EDS PASOANCHO FR CALI",
+          "amount": 122570
+        },
+        {
+          "date": "2025-04-13",
+          "description": "CBC 407 CALI",
+          "amount": 38000
+        },
+        {
+          "date": "2025-04-15",
+          "description": "SUPER INTER UNICO SALO CALI",
+          "amount": 115770
+        },
+        {
+          "date": "2025-04-19",
+          "description": "PANAMERICANA LIB Y PAP CALI",
+          "amount": 29900
+        },
+        {
+          "date": "2025-04-20",
+          "description": "BOLD*MARANELLO PASTA CALI",
+          "amount": 57100
+        },
+        {
+          "date": "2025-04-27",
+          "description": "SEGURO DE VIDA DEUDOR",
+          "amount": 0
+        },
+        {
+          "date": "2025-04-27",
+          "description": "INTERESES FACTURADOS",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "bill_name": "BC - MC - 01 - ENE-2025",
+      "transactions": [
+        {
+          "date": "2024-12-30",
+          "description": "DLO*RAPPI",
+          "amount": 37650
+        },
+        {
+          "date": "2024-12-31",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 72500
+        },
+        {
+          "date": "2024-12-31",
+          "description": "DLO*RAPPI",
+          "amount": 64350
+        },
+        {
+          "date": "2025-01-03",
+          "description": "ABONO SUCURSAL VIRTUAL",
+          "amount": 0
+        },
+        {
+          "date": "2025-01-03",
+          "description": "DiDi CO Food",
+          "amount": 46394
+        },
+        {
+          "date": "2025-01-03",
+          "description": "MC DONALD S",
+          "amount": 32400
+        },
+        {
+          "date": "2025-01-03",
+          "description": "EXITO WOW CHIPICHAPE",
+          "amount": 507201
+        },
+        {
+          "date": "2025-01-03",
+          "description": "INVERSIONES TNS CHIPIC",
+          "amount": 20600
+        },
+        {
+          "date": "2025-01-03",
+          "description": "DLO*RAPPI",
+          "amount": 82950
+        },
+        {
+          "date": "2025-01-03",
+          "description": "ANANDA TALLER DULCE AR",
+          "amount": 47400
+        },
+        {
+          "date": "2025-01-08",
+          "description": "PPRO*MICROSOFT",
+          "amount": 42990
+        },
+        {
+          "date": "2025-01-11",
+          "description": "MOVISTAR PAGOSEPAYCO",
+          "amount": 166175
+        },
+        {
+          "date": "2025-01-12",
+          "description": "DiDi CO Food",
+          "amount": 86242
+        },
+        {
+          "date": "2025-01-12",
+          "description": "ADOBE",
+          "amount": 333200
+        },
+        {
+          "date": "2025-01-12",
+          "description": "DLO*RAPPI",
+          "amount": 58150
+        },
+        {
+          "date": "2025-01-12",
+          "description": "DLO*RAPPI",
+          "amount": 62450
+        },
+        {
+          "date": "2025-01-12",
+          "description": "DLO*RAPPI",
+          "amount": 56800
+        },
+        {
+          "date": "2025-01-12",
+          "description": "DLO*RAPPI",
+          "amount": 44850
+        },
+        {
+          "date": "2025-01-13",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 35600
+        },
+        {
+          "date": "2025-01-13",
+          "description": "EL PATIO DEL MUSEO",
+          "amount": 44796
+        },
+        {
+          "date": "2025-01-13",
+          "description": "GRUPO EMPRESARIAL LA S",
+          "amount": 25200
+        },
+        {
+          "date": "2025-01-13",
+          "description": "EMCALI ETCE ESP",
+          "amount": 161573
+        },
+        {
+          "date": "2025-01-14",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 216500
+        },
+        {
+          "date": "2025-01-14",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 23490
+        },
+        {
+          "date": "2025-01-14",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 294033
+        },
+        {
+          "date": "2025-01-15",
+          "description": "DiDi CO Food",
+          "amount": 25468
+        },
+        {
+          "date": "2025-01-15",
+          "description": "MINIMARKET",
+          "amount": 29700
+        },
+        {
+          "date": "2025-01-15",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 28550
+        },
+        {
+          "date": "2025-01-16",
+          "description": "CARULLA AVENIDA COLOMB",
+          "amount": 47700
+        },
+        {
+          "date": "2025-01-16",
+          "description": "AMAZON.COM",
+          "amount": 359524
+        },
+        {
+          "date": "2025-01-17",
+          "description": "AMAZON.COM",
+          "amount": 254360
+        },
+        {
+          "date": "2025-01-17",
+          "description": "AMAZON.COM",
+          "amount": 175201
+        },
+        {
+          "date": "2025-01-18",
+          "description": "UBER RIDES",
+          "amount": 7442
+        },
+        {
+          "date": "2025-01-18",
+          "description": "UBER RIDES",
+          "amount": 7550
+        },
+        {
+          "date": "2025-01-18",
+          "description": "IZUMI",
+          "amount": 241900
+        },
+        {
+          "date": "2025-01-18",
+          "description": "EL GUAYABO CAFE",
+          "amount": 114285
+        },
+        {
+          "date": "2025-01-19",
+          "description": "CALATHEA",
+          "amount": 28000
+        },
+        {
+          "date": "2025-01-19",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 124150
+        },
+        {
+          "date": "2025-01-19",
+          "description": "RESTAURANTE PIZZERIA O",
+          "amount": 58453
+        },
+        {
+          "date": "2025-01-21",
+          "description": "DiDi CO Food",
+          "amount": 36478
+        },
+        {
+          "date": "2025-01-21",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 216500
+        },
+        {
+          "date": "2025-01-21",
+          "description": "COMCEL PAGO DE FACTURA",
+          "amount": 163239
+        },
+        {
+          "date": "2025-01-21",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 59000
+        },
+        {
+          "date": "2025-01-21",
+          "description": "BARAKA PE ON",
+          "amount": 26300
+        },
+        {
+          "date": "2025-01-22",
+          "description": "DiDi CO Food",
+          "amount": 47053
+        },
+        {
+          "date": "2025-01-22",
+          "description": "SONOMA CUISINE",
+          "amount": 277500
+        },
+        {
+          "date": "2025-01-23",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 51000
+        },
+        {
+          "date": "2025-01-23",
+          "description": "DiDi CO Food",
+          "amount": 27169
+        },
+        {
+          "date": "2025-01-24",
+          "description": "AJUSTE MANUAL A FAVOR",
+          "amount": 0
+        },
+        {
+          "date": "2025-01-24",
+          "description": "LA MASCOTERIA",
+          "amount": 62900
+        },
+        {
+          "date": "2025-01-24",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 119900
+        },
+        {
+          "date": "2025-01-24",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 121250
+        },
+        {
+          "date": "2025-01-25",
+          "description": "LA TIENDA CAMDEN PENON",
+          "amount": 36207
+        },
+        {
+          "date": "2025-01-25",
+          "description": "UBER RIDES",
+          "amount": 23153
+        },
+        {
+          "date": "2025-01-25",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 336925
+        },
+        {
+          "date": "2025-01-25",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 83950
+        },
+        {
+          "date": "2025-01-25",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 942800
+        },
+        {
+          "date": "2025-01-26",
+          "description": "UBER RIDES",
+          "amount": 26451
+        },
+        {
+          "date": "2025-01-26",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 47150
+        },
+        {
+          "date": "2025-01-27",
+          "description": "SPOTIFY*DL",
+          "amount": 26400
+        },
+        {
+          "date": "2025-01-28",
+          "description": "DiDi CO Food",
+          "amount": 32580
+        },
+        {
+          "date": "2025-01-28",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 216000
+        },
+        {
+          "date": "2025-01-28",
+          "description": "AMAZON.COM",
+          "amount": 583731
+        },
+        {
+          "date": "2025-01-29",
+          "description": "AJUSTE MANUAL A FAVOR",
+          "amount": 0
+        },
+        {
+          "date": "2025-01-30",
+          "description": "INTERESES CORRIENTES",
+          "amount": 1182
+        },
+        {
+          "date": "2025-01-30",
+          "description": "CUOTA DE MANEJO",
+          "amount": 48490
+        },
+        {
+          "date": "2025-01-30",
+          "description": "DiDi CO Food",
+          "amount": 21900
+        }
+      ]
+    },
+    {
+      "bill_name": "BC - MC - 02 - FEB-2025",
+      "transactions": [
+        {
+          "date": "2025-01-30",
+          "description": "DiDi CO Food",
+          "amount": 49127
+        },
+        {
+          "date": "2025-01-31",
+          "description": "TAQUERIA EL BUEN PASTO",
+          "amount": 103250
+        },
+        {
+          "date": "2025-01-31",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 167820
+        },
+        {
+          "date": "2025-02-01",
+          "description": "BENGALA Y BANDOLERO",
+          "amount": 40000
+        },
+        {
+          "date": "2025-02-01",
+          "description": "UBER RIDES",
+          "amount": 11905
+        },
+        {
+          "date": "2025-02-01",
+          "description": "UBER RIDES",
+          "amount": 13196
+        },
+        {
+          "date": "2025-02-01",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 140750
+        },
+        {
+          "date": "2025-02-01",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 44250
+        },
+        {
+          "date": "2025-02-01",
+          "description": "DROGUERIA NATURFARMA D",
+          "amount": 6800
+        },
+        {
+          "date": "2025-02-01",
+          "description": "DISCO BANDOLEROS S A S",
+          "amount": 94600
+        },
+        {
+          "date": "2025-02-02",
+          "description": "COCINA COREANA URIMURI",
+          "amount": 152416
+        },
+        {
+          "date": "2025-02-02",
+          "description": "CALATHEA",
+          "amount": 34500
+        },
+        {
+          "date": "2025-02-04",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 259300
+        },
+        {
+          "date": "2025-02-04",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 36300
+        },
+        {
+          "date": "2025-02-05",
+          "description": "ABONO SUCURSAL VIRTUAL",
+          "amount": 0
+        },
+        {
+          "date": "2025-02-05",
+          "description": "DiDi CO Food",
+          "amount": 17670
+        },
+        {
+          "date": "2025-02-06",
+          "description": "DiDi CO Food",
+          "amount": 25105
+        },
+        {
+          "date": "2025-02-07",
+          "description": "COMISION AVANCE CAJERO",
+          "amount": 7460
+        },
+        {
+          "date": "2025-02-07",
+          "description": "INVERSIONES TNS CHIPIC",
+          "amount": 59400
+        },
+        {
+          "date": "2025-02-07",
+          "description": "BOSI CHIPICHAPE N 2",
+          "amount": 524900
+        },
+        {
+          "date": "2025-02-07",
+          "description": "HAMBURGUESAS EL CORRAL",
+          "amount": 88800
+        },
+        {
+          "date": "2025-02-07",
+          "description": "UBER RIDES",
+          "amount": 12952
+        },
+        {
+          "date": "2025-02-07",
+          "description": "VELEZ 5030 CHIPICHAPE",
+          "amount": 329900
+        },
+        {
+          "date": "2025-02-07",
+          "description": "SUSHI GREEN 4",
+          "amount": 41300
+        },
+        {
+          "date": "2025-02-07",
+          "description": "AVANCE CAJERO BANCOLOMBIA",
+          "amount": 300000
+        },
+        {
+          "date": "2025-02-08",
+          "description": "EL MOLINO LA 14 CENTEN",
+          "amount": 14900
+        },
+        {
+          "date": "2025-02-08",
+          "description": "SC CENTENARIO",
+          "amount": 730793
+        },
+        {
+          "date": "2025-02-09",
+          "description": "PPRO*MICROSOFT",
+          "amount": 42990
+        },
+        {
+          "date": "2025-02-09",
+          "description": "EDS ROOSEVELT",
+          "amount": 183535
+        },
+        {
+          "date": "2025-02-09",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 46350
+        },
+        {
+          "date": "2025-02-10",
+          "description": "DiDi CO Food",
+          "amount": 28809
+        },
+        {
+          "date": "2025-02-11",
+          "description": "MOVISTAR PAGOSEPAYCO",
+          "amount": 167087
+        },
+        {
+          "date": "2025-02-12",
+          "description": "UBER RIDES",
+          "amount": 26651
+        },
+        {
+          "date": "2025-02-12",
+          "description": "UBER RIDES",
+          "amount": 26762
+        },
+        {
+          "date": "2025-02-12",
+          "description": "ADOBE",
+          "amount": 333200
+        },
+        {
+          "date": "2025-02-13",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 14400
+        },
+        {
+          "date": "2025-02-14",
+          "description": "UBER RIDES",
+          "amount": 25216
+        },
+        {
+          "date": "2025-02-14",
+          "description": "RAPPI*PRO COLOMBIA",
+          "amount": 23490
+        },
+        {
+          "date": "2025-02-14",
+          "description": "AMAZON.COM",
+          "amount": 317687
+        },
+        {
+          "date": "2025-02-14",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 18950
+        },
+        {
+          "date": "2025-02-15",
+          "description": "CARULLA TRADE CENTER",
+          "amount": 69754
+        },
+        {
+          "date": "2025-02-15",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 135200
+        },
+        {
+          "date": "2025-02-16",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 121150
+        },
+        {
+          "date": "2025-02-16",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 17250
+        },
+        {
+          "date": "2025-02-18",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 261316
+        },
+        {
+          "date": "2025-02-18",
+          "description": "CTRO DIAGNOST AUTOM VA",
+          "amount": 644130
+        },
+        {
+          "date": "2025-02-19",
+          "description": "CDA CAPRI",
+          "amount": 302673
+        },
+        {
+          "date": "2025-02-22",
+          "description": "GUASIMO RESTAURANTE SA",
+          "amount": 346352
+        },
+        {
+          "date": "2025-02-22",
+          "description": "UBER RIDES",
+          "amount": 29573
+        },
+        {
+          "date": "2025-02-22",
+          "description": "SANTA MARTA MARRIOT RE",
+          "amount": 1144404
+        },
+        {
+          "date": "2025-02-22",
+          "description": "ANANDA TALLER DULCE 11",
+          "amount": 49500
+        },
+        {
+          "date": "2025-02-22",
+          "description": "SANTA MARTA MARRIOT RE",
+          "amount": 90685
+        },
+        {
+          "date": "2025-02-22",
+          "description": "AVANCE CAJERO BANCOLOMBIA",
+          "amount": 500000
+        },
+        {
+          "date": "2025-02-24",
+          "description": "COMISION AVANCE CAJERO",
+          "amount": 7460
+        },
+        {
+          "date": "2025-02-24",
+          "description": "UBER RIDES",
+          "amount": 10774
+        },
+        {
+          "date": "2025-02-24",
+          "description": "UBER RIDES",
+          "amount": 9610
+        },
+        {
+          "date": "2025-02-24",
+          "description": "UBER RIDES",
+          "amount": 29563
+        },
+        {
+          "date": "2025-02-24",
+          "description": "SAMARIAN CO SAS",
+          "amount": 209778
+        },
+        {
+          "date": "2025-02-24",
+          "description": "INGLESA 300",
+          "amount": 68900
+        },
+        {
+          "date": "2025-02-24",
+          "description": "COMCEL PAGO DE FACTURA",
+          "amount": 208578
+        },
+        {
+          "date": "2025-02-24",
+          "description": "LATAM AIRLINES COLOMBI",
+          "amount": 91900
+        },
+        {
+          "date": "2025-02-24",
+          "description": "LULO CAFE BAR",
+          "amount": 120230
+        },
+        {
+          "date": "2025-02-25",
+          "description": "UBER RIDES",
+          "amount": 29492
+        },
+        {
+          "date": "2025-02-25",
+          "description": "UBER RIDES",
+          "amount": 29555
+        },
+        {
+          "date": "2025-02-25",
+          "description": "UBER RIDES",
+          "amount": 30203
+        },
+        {
+          "date": "2025-02-25",
+          "description": "SANTA MARTA MARRIOT RE",
+          "amount": 947722
+        },
+        {
+          "date": "2025-02-25",
+          "description": "SANTA MARTA MARRIOT RE",
+          "amount": 272055
+        },
+        {
+          "date": "2025-02-27",
+          "description": "DLO*Spotify",
+          "amount": 26400
+        },
+        {
+          "date": "2025-02-28",
+          "description": "INTERESES CORRIENTES",
+          "amount": 6598
+        },
+        {
+          "date": "2025-02-28",
+          "description": "CUOTA DE MANEJO",
+          "amount": 48490
+        }
+      ]
+    },
+    {
+      "bill_name": "BC - MC - 03 - MAR-2025",
+      "transactions": [
+        {
+          "date": "2025-02-28",
+          "description": "UBER RIDES",
+          "amount": 8957
+        },
+        {
+          "date": "2025-02-28",
+          "description": "UBER RIDES",
+          "amount": 9495
+        },
+        {
+          "date": "2025-02-28",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 15750
+        },
+        {
+          "date": "2025-02-28",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 330711
+        },
+        {
+          "date": "2025-02-28",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 13225
+        },
+        {
+          "date": "2025-02-28",
+          "description": "EMCALI ETCE ESP",
+          "amount": 86858
+        },
+        {
+          "date": "2025-02-28",
+          "description": "MIYABI SUSHI AND JAPON",
+          "amount": 99535
+        },
+        {
+          "date": "2025-03-01",
+          "description": "LA MASCOTERIA",
+          "amount": 68000
+        },
+        {
+          "date": "2025-03-01",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 10050
+        },
+        {
+          "date": "2025-03-01",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 19350
+        },
+        {
+          "date": "2025-03-01",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 159950
+        },
+        {
+          "date": "2025-03-01",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 63800
+        },
+        {
+          "date": "2025-03-03",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 40900
+        },
+        {
+          "date": "2025-03-04",
+          "description": "PAYU*MICROSOFT",
+          "amount": 83999
+        },
+        {
+          "date": "2025-03-04",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 12000
+        },
+        {
+          "date": "2025-03-04",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 107550
+        },
+        {
+          "date": "2025-03-06",
+          "description": "ABONO SUCURSAL VIRTUAL",
+          "amount": 0
+        },
+        {
+          "date": "2025-03-06",
+          "description": "DiDi CO Food",
+          "amount": 62692
+        },
+        {
+          "date": "2025-03-06",
+          "description": "DiDi CO Food",
+          "amount": 56700
+        },
+        {
+          "date": "2025-03-07",
+          "description": "AJUSTE MANUAL A FAVOR",
+          "amount": 0
+        },
+        {
+          "date": "2025-03-07",
+          "description": "CAFE GARDENIA RIO",
+          "amount": 83000
+        },
+        {
+          "date": "2025-03-07",
+          "description": "UBER RIDES",
+          "amount": 9659
+        },
+        {
+          "date": "2025-03-07",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 216000
+        },
+        {
+          "date": "2025-03-08",
+          "description": "SMART FIT CENTENARIO V",
+          "amount": 29000
+        },
+        {
+          "date": "2025-03-08",
+          "description": "UBER RIDES",
+          "amount": 8943
+        },
+        {
+          "date": "2025-03-08",
+          "description": "LILY DELICIAS CENTENAR",
+          "amount": 46000
+        },
+        {
+          "date": "2025-03-09",
+          "description": "HAMBURGUESAS EL CORRAL",
+          "amount": 103800
+        },
+        {
+          "date": "2025-03-09",
+          "description": "HAMBURGUESAS EL CORRAL",
+          "amount": 33900
+        },
+        {
+          "date": "2025-03-09",
+          "description": "PPRO*MICROSOFT",
+          "amount": 42990
+        },
+        {
+          "date": "2025-03-09",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 55600
+        },
+        {
+          "date": "2025-03-09",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 91500
+        },
+        {
+          "date": "2025-03-10",
+          "description": "MOVISTAR PAGOSEPAYCO",
+          "amount": 166315
+        },
+        {
+          "date": "2025-03-10",
+          "description": "DiDi CO Food",
+          "amount": 27273
+        },
+        {
+          "date": "2025-03-11",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 184293
+        },
+        {
+          "date": "2025-03-11",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 37441
+        },
+        {
+          "date": "2025-03-11",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 184293
+        },
+        {
+          "date": "2025-03-11",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 89600
+        },
+        {
+          "date": "2025-03-12",
+          "description": "MINIMARKET",
+          "amount": 35500
+        },
+        {
+          "date": "2025-03-12",
+          "description": "ADOBE",
+          "amount": 333200
+        },
+        {
+          "date": "2025-03-12",
+          "description": "TIENDA D1 CALI NORMAND",
+          "amount": 31150
+        },
+        {
+          "date": "2025-03-14",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 23490
+        },
+        {
+          "date": "2025-03-14",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 216000
+        },
+        {
+          "date": "2025-03-14",
+          "description": "YASAI TIENDA GOURMET",
+          "amount": 117900
+        },
+        {
+          "date": "2025-03-14",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 24050
+        },
+        {
+          "date": "2025-03-14",
+          "description": "SC CENTENARIO",
+          "amount": 446802
+        },
+        {
+          "date": "2025-03-15",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 52850
+        },
+        {
+          "date": "2025-03-16",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 47750
+        },
+        {
+          "date": "2025-03-17",
+          "description": "AMAZON.COM",
+          "amount": 167608
+        },
+        {
+          "date": "2025-03-17",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 63700
+        },
+        {
+          "date": "2025-03-21",
+          "description": "DiDi CO Food",
+          "amount": 53397
+        },
+        {
+          "date": "2025-03-21",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 216000
+        },
+        {
+          "date": "2025-03-22",
+          "description": "DOLLARCITY ALFEREZ",
+          "amount": 56000
+        },
+        {
+          "date": "2025-03-22",
+          "description": "SC CENTENARIO",
+          "amount": 154057
+        },
+        {
+          "date": "2025-03-23",
+          "description": "BOLD*SANCOCHO DE GIN",
+          "amount": 106200
+        },
+        {
+          "date": "2025-03-25",
+          "description": "AJUSTE MANUAL A FAVOR",
+          "amount": 0
+        },
+        {
+          "date": "2025-03-25",
+          "description": "COMCEL PAGO DE FACTURA",
+          "amount": 208578
+        },
+        {
+          "date": "2025-03-25",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 384265
+        },
+        {
+          "date": "2025-03-25",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 16350
+        },
+        {
+          "date": "2025-03-25",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 2442
+        },
+        {
+          "date": "2025-03-26",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 10206
+        },
+        {
+          "date": "2025-03-27",
+          "description": "IKEA ECOMMERCE",
+          "amount": 253820
+        },
+        {
+          "date": "2025-03-27",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 12050
+        },
+        {
+          "date": "2025-03-27",
+          "description": "SPOTIFY*DL",
+          "amount": 26400
+        },
+        {
+          "date": "2025-03-30",
+          "description": "INTERESES CORRIENTES",
+          "amount": 2489
+        },
+        {
+          "date": "2025-03-30",
+          "description": "CUOTA DE MANEJO",
+          "amount": 48490
+        }
+      ]
+    },
+    {
+      "bill_name": "BC - MC - 04 - ABR-2025",
+      "transactions": [
+        {
+          "date": "2025-03-28",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 216000
+        },
+        {
+          "date": "2025-03-29",
+          "description": "EDS GNV VALLEMIO",
+          "amount": 99810
+        },
+        {
+          "date": "2025-03-29",
+          "description": "RANCHO EDEN",
+          "amount": 147500
+        },
+        {
+          "date": "2025-03-29",
+          "description": "MINIMARKET",
+          "amount": 20900
+        },
+        {
+          "date": "2025-03-30",
+          "description": "GRUPO JOSE FERNANDO SA",
+          "amount": 42100
+        },
+        {
+          "date": "2025-03-30",
+          "description": "HELENA ADENTRO REST BA",
+          "amount": 176501
+        },
+        {
+          "date": "2025-04-01",
+          "description": "RANCHO EDEN",
+          "amount": 143100
+        },
+        {
+          "date": "2025-04-01",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 47050
+        },
+        {
+          "date": "2025-04-01",
+          "description": "ESTACION DE SERVICIOS",
+          "amount": 175536
+        },
+        {
+          "date": "2025-04-02",
+          "description": "PAYU*MICROSOFT",
+          "amount": 60720
+        },
+        {
+          "date": "2025-04-02",
+          "description": "PAYU*MICROSOFT",
+          "amount": 9880
+        },
+        {
+          "date": "2025-04-03",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 73955
+        },
+        {
+          "date": "2025-04-04",
+          "description": "MASA 70",
+          "amount": 98080
+        },
+        {
+          "date": "2025-04-04",
+          "description": "BOLD*AMALFITANA",
+          "amount": 262222
+        },
+        {
+          "date": "2025-04-04",
+          "description": "ABEL Y SOFIA",
+          "amount": 301556
+        },
+        {
+          "date": "2025-04-05",
+          "description": "BOLD*Zha Sua Paraiso",
+          "amount": 175000
+        },
+        {
+          "date": "2025-04-05",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 86400
+        },
+        {
+          "date": "2025-04-05",
+          "description": "BAGATELLE SAS",
+          "amount": 162876
+        },
+        {
+          "date": "2025-04-05",
+          "description": "HOME BURGERS H15",
+          "amount": 33700
+        },
+        {
+          "date": "2025-04-05",
+          "description": "JUAN PABLO TELLEZ BADI",
+          "amount": 46000
+        },
+        {
+          "date": "2025-04-06",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 55050
+        },
+        {
+          "date": "2025-04-06",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 47850
+        },
+        {
+          "date": "2025-04-07",
+          "description": "MOVISTAR PAGOSEPAYCO",
+          "amount": 164989
+        },
+        {
+          "date": "2025-04-08",
+          "description": "ABONO SUCURSAL VIRTUAL",
+          "amount": 0
+        },
+        {
+          "date": "2025-04-08",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 216000
+        },
+        {
+          "date": "2025-04-08",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 544053
+        },
+        {
+          "date": "2025-04-08",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 16221
+        },
+        {
+          "date": "2025-04-09",
+          "description": "APLICACION SALDO A FAVO",
+          "amount": 0
+        },
+        {
+          "date": "2025-04-09",
+          "description": "LA MASCOTERIA",
+          "amount": 159000
+        },
+        {
+          "date": "2025-04-09",
+          "description": "PAYU*MICROSOFT",
+          "amount": 42990
+        },
+        {
+          "date": "2025-04-10",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 28950
+        },
+        {
+          "date": "2025-04-11",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 132950
+        },
+        {
+          "date": "2025-04-12",
+          "description": "EXITO WOW CHIPICHAPE",
+          "amount": 230071
+        },
+        {
+          "date": "2025-04-12",
+          "description": "TH CHIPICHAPE CALI",
+          "amount": 36878
+        },
+        {
+          "date": "2025-04-12",
+          "description": "ADOBE",
+          "amount": 333200
+        },
+        {
+          "date": "2025-04-12",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 63950
+        },
+        {
+          "date": "2025-04-12",
+          "description": "FALABELLA TDA DPT PACI",
+          "amount": 372950
+        },
+        {
+          "date": "2025-04-12",
+          "description": "SUPER A",
+          "amount": 66200
+        },
+        {
+          "date": "2025-04-12",
+          "description": "PRODUCT ALIMENT LA LOC",
+          "amount": 7300
+        },
+        {
+          "date": "2025-04-12",
+          "description": "SC CENTENARIO",
+          "amount": 522145
+        },
+        {
+          "date": "2025-04-12",
+          "description": "AVANCE CAJERO BANCOLOMBIA",
+          "amount": 300000
+        },
+        {
+          "date": "2025-04-13",
+          "description": "CAFE GARDENIA CALI",
+          "amount": 71800
+        },
+        {
+          "date": "2025-04-14",
+          "description": "COMISION AVANCE CAJERO",
+          "amount": 7460
+        },
+        {
+          "date": "2025-04-14",
+          "description": "RAPPI*PRO COLOMBIA",
+          "amount": 23490
+        },
+        {
+          "date": "2025-04-15",
+          "description": "AJUSTE MANUAL A FAVOR",
+          "amount": 0
+        },
+        {
+          "date": "2025-04-15",
+          "description": "PAYU*MICROSOFT",
+          "amount": 29975
+        },
+        {
+          "date": "2025-04-17",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 54550
+        },
+        {
+          "date": "2025-04-17",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 89450
+        },
+        {
+          "date": "2025-04-18",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 18850
+        },
+        {
+          "date": "2025-04-19",
+          "description": "AMAZON.COM",
+          "amount": 528763
+        },
+        {
+          "date": "2025-04-19",
+          "description": "COMCEL PAGO DE FACTURA",
+          "amount": 208578
+        },
+        {
+          "date": "2025-04-19",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 47350
+        },
+        {
+          "date": "2025-04-19",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 57300
+        },
+        {
+          "date": "2025-04-20",
+          "description": "MERCPAGO*MOVILNETCOLOM",
+          "amount": 90000
+        },
+        {
+          "date": "2025-04-21",
+          "description": "DiDi CO Food",
+          "amount": 60227
+        },
+        {
+          "date": "2025-04-21",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 51050
+        },
+        {
+          "date": "2025-04-22",
+          "description": "DiDi CO Food",
+          "amount": 66561
+        },
+        {
+          "date": "2025-04-22",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 496285
+        },
+        {
+          "date": "2025-04-22",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 14985
+        },
+        {
+          "date": "2025-04-22",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 46930
+        },
+        {
+          "date": "2025-04-23",
+          "description": "AMAZON.COM",
+          "amount": 185884
+        },
+        {
+          "date": "2025-04-23",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 30500
+        },
+        {
+          "date": "2025-04-24",
+          "description": "DiDi CO Food",
+          "amount": 29744
+        },
+        {
+          "date": "2025-04-24",
+          "description": "DiDi CO Food",
+          "amount": 34534
+        },
+        {
+          "date": "2025-04-25",
+          "description": "CARPANETO SAS",
+          "amount": 206500
+        },
+        {
+          "date": "2025-04-25",
+          "description": "UBER RIDES",
+          "amount": 8017
+        },
+        {
+          "date": "2025-04-25",
+          "description": "UBER RIDES",
+          "amount": 12318
+        },
+        {
+          "date": "2025-04-25",
+          "description": "UBER RIDES",
+          "amount": 15083
+        },
+        {
+          "date": "2025-04-25",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 216000
+        },
+        {
+          "date": "2025-04-25",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 54330
+        },
+        {
+          "date": "2025-04-26",
+          "description": "UBER RIDES",
+          "amount": 7839
+        },
+        {
+          "date": "2025-04-26",
+          "description": "GRUPO EMPRESARIAL LA S",
+          "amount": 41200
+        },
+        {
+          "date": "2025-04-27",
+          "description": "MUNDANO",
+          "amount": 249700
+        },
+        {
+          "date": "2025-04-27",
+          "description": "UBER RIDES",
+          "amount": 8977
+        },
+        {
+          "date": "2025-04-27",
+          "description": "SPOTIFY*DL",
+          "amount": 26400
+        },
+        {
+          "date": "2025-04-27",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 67600
+        },
+        {
+          "date": "2025-04-28",
+          "description": "DiDi CO Food",
+          "amount": 53897
+        },
+        {
+          "date": "2025-04-28",
+          "description": "DiDi CO Food",
+          "amount": 0
+        },
+        {
+          "date": "2025-04-28",
+          "description": "DiDi CO Food",
+          "amount": 39097
+        },
+        {
+          "date": "2025-04-29",
+          "description": "DiDi CO Food",
+          "amount": 40842
+        },
+        {
+          "date": "2025-04-30",
+          "description": "INTERESES CORRIENTES",
+          "amount": 3641
+        },
+        {
+          "date": "2025-04-30",
+          "description": "CUOTA DE MANEJO",
+          "amount": 48490
+        },
+        {
+          "date": "2025-04-30",
+          "description": "DiDi CO Food",
+          "amount": 28123
+        }
+      ]
+    },
+    {
+      "bill_name": "BC - MC - 05 - MAY-2025",
+      "transactions": [
+        {
+          "date": "2025-05-01",
+          "description": "ABONO SUCURSAL VIRTUAL",
+          "amount": 0
+        },
+        {
+          "date": "2025-05-01",
+          "description": "IKEA CALI",
+          "amount": 933610
+        },
+        {
+          "date": "2025-05-01",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 82650
+        },
+        {
+          "date": "2025-05-02",
+          "description": "PAYU*MICROSOFT",
+          "amount": 282685
+        },
+        {
+          "date": "2025-05-02",
+          "description": "AMAZON.COM",
+          "amount": 244964
+        },
+        {
+          "date": "2025-05-02",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 50250
+        },
+        {
+          "date": "2025-05-02",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 32000
+        },
+        {
+          "date": "2025-05-05",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 186150
+        },
+        {
+          "date": "2025-05-05",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 41950
+        },
+        {
+          "date": "2025-05-06",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 428155
+        },
+        {
+          "date": "2025-05-06",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 166
+        },
+        {
+          "date": "2025-05-07",
+          "description": "MERCADO PAGO*2PRODUCTO",
+          "amount": 390455
+        },
+        {
+          "date": "2025-05-07",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 33250
+        },
+        {
+          "date": "2025-05-08",
+          "description": "DiDi CO Food",
+          "amount": 40842
+        },
+        {
+          "date": "2025-05-09",
+          "description": "LA MASCOTERIA",
+          "amount": 213000
+        },
+        {
+          "date": "2025-05-09",
+          "description": "PAYU*MICROSOFT",
+          "amount": 42990
+        },
+        {
+          "date": "2025-05-09",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 63000
+        },
+        {
+          "date": "2025-05-09",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 64000
+        },
+        {
+          "date": "2025-05-10",
+          "description": "FITNESS 24 SEVEN COLOM",
+          "amount": 29000
+        },
+        {
+          "date": "2025-05-10",
+          "description": "UBER RIDES",
+          "amount": 12167
+        },
+        {
+          "date": "2025-05-10",
+          "description": "UBER RIDES",
+          "amount": 7575
+        },
+        {
+          "date": "2025-05-10",
+          "description": "PANADERIA LA QUINTA CO",
+          "amount": 21900
+        },
+        {
+          "date": "2025-05-10",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 7200
+        },
+        {
+          "date": "2025-05-10",
+          "description": "BODEGA BBC GRANADA",
+          "amount": 99903
+        },
+        {
+          "date": "2025-05-10",
+          "description": "HUMO",
+          "amount": 34000
+        },
+        {
+          "date": "2025-05-11",
+          "description": "AMAZON.COM",
+          "amount": 69187
+        },
+        {
+          "date": "2025-05-11",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 67450
+        },
+        {
+          "date": "2025-05-12",
+          "description": "MERCADO PAGO*MERCADOLI",
+          "amount": 66251
+        },
+        {
+          "date": "2025-05-12",
+          "description": "ADOBE",
+          "amount": 333200
+        },
+        {
+          "date": "2025-05-13",
+          "description": "MOVISTAR PAGOSEPAYCO",
+          "amount": 164989
+        },
+        {
+          "date": "2025-05-14",
+          "description": "DiDi CO Food",
+          "amount": 40842
+        },
+        {
+          "date": "2025-05-14",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 23490
+        },
+        {
+          "date": "2025-05-14",
+          "description": "EMCALI ETCE ESP",
+          "amount": 264302
+        },
+        {
+          "date": "2025-05-15",
+          "description": "DiDi CO Food",
+          "amount": 37812
+        },
+        {
+          "date": "2025-05-15",
+          "description": "DiDi CO Food",
+          "amount": 35203
+        },
+        {
+          "date": "2025-05-16",
+          "description": "DiDi CO Food",
+          "amount": 44346
+        },
+        {
+          "date": "2025-05-16",
+          "description": "MERCPAGO*SIMINTERNETIL",
+          "amount": 60000
+        },
+        {
+          "date": "2025-05-16",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 216000
+        },
+        {
+          "date": "2025-05-16",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 231205
+        },
+        {
+          "date": "2025-05-17",
+          "description": "DiDi CO Food",
+          "amount": 38062
+        },
+        {
+          "date": "2025-05-17",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 42750
+        },
+        {
+          "date": "2025-05-20",
+          "description": "DiDi CO Food",
+          "amount": 29178
+        },
+        {
+          "date": "2025-05-20",
+          "description": "UBER *TRIP",
+          "amount": 26591
+        },
+        {
+          "date": "2025-05-20",
+          "description": "UBER RIDES",
+          "amount": 25707
+        },
+        {
+          "date": "2025-05-20",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 84150
+        },
+        {
+          "date": "2025-05-22",
+          "description": "DiDi CO Food",
+          "amount": 28123
+        },
+        {
+          "date": "2025-05-22",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 29150
+        },
+        {
+          "date": "2025-05-23",
+          "description": "RAPPI*RAPPI COLOMBIA",
+          "amount": 214000
+        },
+        {
+          "date": "2025-05-23",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 265975
+        },
+        {
+          "date": "2025-05-24",
+          "description": "DE LA PAVA N 2",
+          "amount": 88500
+        },
+        {
+          "date": "2025-05-24",
+          "description": "K1 FLORA",
+          "amount": 427411
+        },
+        {
+          "date": "2025-05-25",
+          "description": "DLO*Microsoft*Xbox",
+          "amount": 54620
+        },
+        {
+          "date": "2025-05-25",
+          "description": "BARAKHA PANADER ANCEST",
+          "amount": 171160
+        },
+        {
+          "date": "2025-05-26",
+          "description": "DiDi CO Food",
+          "amount": 40256
+        },
+        {
+          "date": "2025-05-27",
+          "description": "DLO*Spotify",
+          "amount": 26400
+        },
+        {
+          "date": "2025-05-28",
+          "description": "DiDi CO Food",
+          "amount": 57912
+        },
+        {
+          "date": "2025-05-28",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 52850
+        },
+        {
+          "date": "2025-05-28",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 86350
+        },
+        {
+          "date": "2025-05-29",
+          "description": "IMPTO VEHI VALE NP",
+          "amount": 654600
+        },
+        {
+          "date": "2025-05-29",
+          "description": "DLO*RAPPI COLOMBIA",
+          "amount": 46950
+        },
+        {
+          "date": "2025-05-30",
+          "description": "ABONO SUCURSAL VIRTUAL",
+          "amount": 0
+        },
+        {
+          "date": "2025-05-30",
+          "description": "COMISION AVANCE CAJERO",
+          "amount": 7460
+        },
+        {
+          "date": "2025-05-30",
+          "description": "DiDi CO Food",
+          "amount": 59527
+        },
+        {
+          "date": "2025-05-30",
+          "description": "AVANCE CAJERO BANCOLOMBIA",
+          "amount": 300000
+        },
+        {
+          "date": "2025-05-31",
+          "description": "INTERESES CORRIENTES",
+          "amount": 5714
+        },
+        {
+          "date": "2025-05-31",
+          "description": "CUOTA DE MANEJO",
+          "amount": 48490
+        }
+      ]
+    },
+    {
+      "bill_name": "BC - VS - 01 - ENE-2025",
+      "transactions": [
+        {
+          "date": "",
+          "description": "-",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "bill_name": "BC - VS - 02 - FEB-2025",
+      "transactions": [
+        {
+          "date": "",
+          "description": "-",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "bill_name": "BC - VS - 03 - MAR-2025",
+      "transactions": [
+        {
+          "date": "",
+          "description": "-",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "bill_name": "BC - VS - 04 - ABR-2025",
+      "transactions": [
+        {
+          "date": "",
+          "description": "-",
+          "amount": 0
+        }
+      ]
+    },
+    {
+      "bill_name": "BC - VS - 05 - MAY-2025",
+      "transactions": [
+        {
+          "date": "2025-05-01",
+          "description": "OPECOM EDS SILOE",
+          "amount": 198342
+        },
+        {
+          "date": "2025-05-01",
+          "description": "AVANCE CAJERO BANCOLOMBIA",
+          "amount": 500000
+        },
+        {
+          "date": "2025-05-02",
+          "description": "COMISION AVANCE CAJERO",
+          "amount": 7460
+        },
+        {
+          "date": "2025-05-31",
+          "description": "INTERESES CORRIENTES",
+          "amount": 9900
+        }
+      ]
+    }
+  ]
+}
