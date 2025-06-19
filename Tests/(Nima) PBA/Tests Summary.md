@@ -1,5 +1,26 @@
 # Tests Summary
 
+## Test #0
+
+- **Purpose**: Compare the extraction accuracy of three LLMs (ChatGPT, Claude, Gemini) when processing credit card PDFs using structured prompts.
+
+- **Input**: Six credit card PDF statements (MC & VS, Feb–Apr 2025) with a verified ground truth of 57 transactions worth $5,120,378 COP.
+
+- **Extraction target**:
+
+    * Date (in normalized format)
+    * Description (free-text normalized)
+    * Amount (in COP, integer value with ±5 peso tolerance)
+
+- **Expected output**: JSON with a `bill_name` field and a `transactions` array containing structured transaction data.
+
+- **Scope**: Manual prompt-based testing of LLMs through web interfaces — no automation or inference logic in this phase.
+
+- **Results**: All models performed well on simple MasterCard statements. Claude ranked first overall with 93.8% precision and 78.9% recall. ChatGPT followed closely. Gemini showed inconsistent results, completely failing to extract from one complex Visa statement. The evaluation framework successfully quantified extraction quality and revealed key differences in robustness and reliability across model families.
+
+
+
+
 ## Test #1
     
 - **Purpose**: Validate feasibility of extracting expenses from a structured PDF using a Python CLI app.

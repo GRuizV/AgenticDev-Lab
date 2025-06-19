@@ -1,0 +1,22 @@
+{
+    "bills": [
+        {
+            "bill_name": "MC - FEB-2025",
+            "transactions": [
+                {"date": "2025-02-15", "description": "PAYU*NETFLIX 110111BOGOTA", "amount": 44900},
+                {"date": "2025-02-14", "description": "CINECOLOMBIA BOGOTA", "amount": 50000},
+                {"date": "2025-02-10", "description": "MERCPAGO*CRUZVERDEPAGO BARRANQUILLA", "amount": 224180},
+                {"date": "2025-02-06", "description": "MERCADO PAGO*TECNOPLAZ 760001CALI", "amount": 115900}
+            ]
+        },
+        {
+            "bill_name": "VS - MAR-2025",
+            "transactions": [
+                {"date": "2025-03-26", "description": "SEGURO DE VIDA DEUDOR", "amount": 0},
+                {"date": "2025-03-23", "description": "HURTADO SOLARI CALI", "amount": 40800},
+                {"date": "2025-03-23", "description": "GREEN EDS PASOANCHO CALI", "amount": 149610},
+                {"date": "2025-03-22", "description": "KV GROUP SAS CALI", "amount": 41600}
+            ]
+        }
+    ]
+}

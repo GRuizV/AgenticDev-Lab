@@ -1,0 +1,229 @@
+{
+  "bills": [
+    {
+        "bill_name": "MC - FEB-2025",
+        "transactions": [
+            {
+            "date": "2025-02-15",
+            "description": "110111BOGOTA PAYU NETFLIX",
+            "amount": 44900
+            },
+            {
+            "date": "2025-02-14",
+            "description": "CINE COLOMBIA BOGOTA",
+            "amount": 50000
+            },
+            {
+            "date": "2025-02-10",
+            "description": "MERCPAGO CRUZVERDEPAGO BARRANQUILLA",
+            "amount": 224180
+            },
+            {
+            "date": "2025-02-06",
+            "description": "MERCADO PAGO TECNOPLAZ 760001CALI",
+            "amount": 115900
+            }
+        ]
+    },
+    {
+        "bill_name": "MC - MAR-2025",
+        "transactions": [
+            {
+            "date": "2025-03-15",
+            "description": "110111BOGOTA PAYU NETFLIX",
+            "amount": 44900
+            }
+        ]
+    },
+    {
+        "bill_name": "MC - ABR-2025",
+        "transactions": [
+            {
+            "date": "2025-04-21",
+            "description": "HOMECENTER VTAS A DIST BOGOTA",
+            "amount": 704700
+            },
+            {
+            "date": "2025-04-20",
+            "description": "TU BOLETA 11001BOGOTA",
+            "amount": 49000
+            },
+            {
+            "date": "2025-04-15",
+            "description": "110111BOGOTA PAYU NETFLIX",
+            "amount": 44900
+            },
+            {
+            "date": "2025-04-09",
+            "description": "DLO Didi 110111Bogota",
+            "amount": 9180
+            },
+            {
+            "date": "2025-04-08",
+            "description": "DLO Didi 110111Bogota",
+            "amount": 10115
+            },
+            {
+            "date": "2025-04-08",
+            "description": "DLO Didi 110111Bogota",
+            "amount": 12600
+            },
+            {
+            "date": "2025-04-04",
+            "description": "MERCADO PAGO CRUZVERDE BARRANQUILLA",
+            "amount": 228410
+            },
+            {
+            "date": "2025-04-04",
+            "description": "110111 Bogota UBER RIDES",
+            "amount": 9192
+            }
+        ]
+    },
+    {
+        "bill_name": "VS - FEB-2025",
+        "transactions": [
+            {
+            "date": "2025-02-23",
+            "description": "SC CENTENARIO CALI",
+            "amount": 73087
+            },
+            {
+            "date": "2025-02-21",
+            "description": "TIENDA D1 VILLA DEL PR CALI",
+            "amount": 19780
+            },
+            {
+            "date": "2025-02-21",
+            "description": "SUPER INTER UNICO SALO CALI",
+            "amount": 72840
+            },
+            {
+            "date": "2025-02-18",
+            "description": "TIENDA D1 VAL CALI CAL CALI",
+            "amount": 37410
+            },
+            {
+            "date": "2025-02-18",
+            "description": "LIBRERIA SAN PABLO CALI",
+            "amount": 29500
+            },
+            {
+            "date": "2025-02-11",
+            "description": "TIENDA D1 VILLA DEL PR CALI",
+            "amount": 12040
+            },
+            {
+            "date": "2025-02-11",
+            "description": "CTRO DIAGNOST AUTOM VA CALI",
+            "amount": 302500
+            },
+            {
+            "date": "2025-02-11",
+            "description": "CALI SC LA PRIMERA",
+            "amount": 48700
+            },
+            {
+            "date": "2025-02-10",
+            "description": "SMART FIT METROPOLIS BOGOTA DC",
+            "amount": 79900
+            },
+            {
+            "date": "2025-02-03",
+            "description": "SUPER INTER UNICO SALO CALI",
+            "amount": 82954
+            },
+            {
+            "date": "2025-02-03",
+            "description": "TIENDA D1 VILLA DEL PR CALI",
+            "amount": 82550
+            },
+            {
+            "date": "2025-02-01",
+            "description": "HOMECENTER CALI",
+            "amount": 64900
+            },
+            {
+            "date": "2025-01-30",
+            "description": "STETIK DENT CALI",
+            "amount": 680000
+            },
+            {
+            "date": "2025-01-25",
+            "description": "HM MALLPLAZA PLAZA DE CALI",
+            "amount": 64900
+            },
+            {
+            "date": "2025-01-25",
+            "description": "SC EL LIMONAR CALI",
+            "amount": 13900
+            },
+            {
+            "date": "2025-01-24",
+            "description": "THE BARBER FACTORY CALI",
+            "amount": 38000
+            }
+        ]
+    },
+    {
+       "bill_name": "VS - MAR-2025",
+        "transactions": [
+            {
+            "date": "2025-03-23",
+            "description": "HURTADO SOLARI CALI",
+            "amount": 40800
+            },
+            {
+            "date": "2025-03-23",
+            "description": "GREEN EDS PASOANCHO CALI",
+            "amount": 149610
+            },
+            {
+            "date": "2025-03-22",
+            "description": "KV GROUP SAS CALI",
+            "amount": 41600
+            },
+            {
+            "date": "2025-03-21",
+            "description": "TIENDAS ARA CALI",
+            "amount": 47400
+            },
+            {
+            "date": "2025-03-21",
+            "description": "SUPER INTER UNICO SALO CALI",
+            "amount": 98782
+            },
+            {
+            "date": "2025-03-14",
+            "description": "EXITO WOW UNICALI CALI",
+            "amount": 66845
+            },
+            {
+            "date": "2025-03-10",
+            "description": "SUPER INTER UNICO SALO CALI",
+            "amount": 52800
+            },
+            {
+            "date": "2025-03-10",
+            "description": "SMART FIT METROPOLIS BOGOTA DC",
+            "amount": 79900
+            },
+            {
+            "date": "2025-03-10",
+            "description": "TIENDA D1 VILLA DEL PR CALI",
+            "amount": 68570
+            },
+            {
+            "date": "2025-03-01",
+            "description": "HOTEL CASA GUADALUPE D CALI",
+            "amount": 47000
+            },
+            {
+            "date": "2025-03-01",
+            "description": "ORGANIZACION TERPELS YUMBO",
+            "amount": 117153
+            }
+        ] 
+    }
+    ]
+}
