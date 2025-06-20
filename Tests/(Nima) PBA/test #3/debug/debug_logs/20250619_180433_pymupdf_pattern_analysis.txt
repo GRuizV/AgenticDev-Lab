@@ -1,0 +1,35 @@
+Pattern Analysis for pymupdf
+==================================================
+Total lines: 251
+Text length: 6275 characters
+
+Lines containing $ and numbers:
+Line 74: '$0.00'
+Line 75: '$107,931.26'
+Line 76: '$434,979.26'
+Line 77: '$434,980.00'
+Line 78: '$0.00'
+Line 79: '$0.00'
+Line 80: '$0.00'
+Line 81: '$0.00'
+Line 82: '$0.00'
+Line 83: '$0.00'
+
+Total lines with $ and numbers: 41
+
+Pattern Testing Results:
+
+Pattern 1: (\d{5,})\s*(\d{2})(\d{2})(\d{4})\s*\$?([\d,]+\.?\d*)\s*\$?([\d,]+\.?\d*)\s*\$?([\d,]+\.?\d*)
+Matches found: 4
+  Match 1: ('523577', '20', '17', '0638', '5', '0', '1')
+  Match 2: ('52357', '72', '01', '7063', '8', '5', '0')
+  Match 3: ('52357', '72', '01', '7063', '8', '5', '0')
+
+Pattern 2: (\d+)\s+(\d{2})(\d{2})(\d{4})\s+\$?([\d,]+\.?\d*)
+Matches found: 0
+
+Pattern 3: (\d{2})(\d{2})(\d{4})\s*\$?([\d,]+\.?\d*)
+Matches found: 7
+  Match 1: ('52', '35', '7720', '17063850')
+  Match 2: ('77', '09', '9980', '06423')
+  Match 3: ('52', '35', '7720', '17063850')

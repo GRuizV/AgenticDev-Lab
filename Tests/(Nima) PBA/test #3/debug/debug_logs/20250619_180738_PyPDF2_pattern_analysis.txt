@@ -1,0 +1,32 @@
+Pattern Analysis for PyPDF2
+==================================================
+Total lines: 100
+Text length: 6234 characters
+
+Lines containing $ and numbers:
+Line 43: '$0.00 $107,931.26'
+Line 44: '$434,979.26 $434,980.00'
+Line 45: '$0.00 $0.00'
+Line 46: '$0.00 $0.00'
+Line 47: '$0.00 $0.00'
+Line 48: '$0.00 $0.00'
+Line 49: '$0.00'
+Line 50: '$107,932.00$0.00$0.00 $0.00'
+Line 51: '$434,980.00'
+Line 52: '$12,083.00 $434,979.26'
+
+Total lines with $ and numbers: 18
+
+Pattern Testing Results:
+
+Pattern 1: (\d{4})\s*\n\s*(\d{1,2})\s*\n\s*(\d{1,2})\s*\n\s*(\d{2})\s*\n.*?\$?([\d,]+\.?\d*)
+Matches found: 0
+
+Pattern 2: (\d{4})\s+(\d{1,2})\s+(\d{1,2})\s+(\d{2})\s+[\d.]+\s+\$?([\d,]+\.?\d*)
+Matches found: 5
+  Match 1: ('7888', '15', '02', '25', '44,900.00')
+  Match 2: ('9493', '14', '02', '25', '50,000.00')
+  Match 3: ('0293', '10', '02', '25', '224,180.00')
+
+Pattern 3: (\d{1,2})\s*\n\s*(\d{1,2})\s*\n\s*(\d{2})\s*\n.*?\$?([\d,]+\.?\d*)
+Matches found: 0

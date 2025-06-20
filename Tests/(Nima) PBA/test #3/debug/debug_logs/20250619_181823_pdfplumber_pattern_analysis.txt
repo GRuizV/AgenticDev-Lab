@@ -1,0 +1,29 @@
+Pattern Analysis for pdfplumber
+==================================================
+Total lines: 52
+Text length: 5817 characters
+
+Lines containing $ and numbers:
+Line 8: 'CCLL 5566 NNOO 44 BB 114455 CCAA 2211 AA $25,431,980 $24,997,000.00'
+Line 11: 'PPAAGGUUEE HHAASSTTAA 17 03 2025 $434,980.00 $12,083.00 $434,979.26 $0.00 136-81383-4'
+Line 14: '7888 15 02 25 PAYU*NETFLIX 110111BOGOTA 26.19 $44,900.00 $44,900.00 $0.00 01 01 00'
+Line 15: '9493 14 02 25 CINE COLOMBIA BOGOTA 26.19 $50,000.00 $50,000.00 $0.00 01 01 00'
+Line 16: '0293 10 02 25 MERCPAGO*CRUZVERDEPAGO BARRANQUILLA 26.19 $224,180.00 $224,180.00 $0.00 01 01 00'
+Line 17: '3391 06 02 25 MERCADO PAGO*TECNOPLAZ 760001CALI 26.19 $115,900.00 $115,899.26 $0.00 01 01 00'
+Line 18: '1968 31 01 25 PAGO ATH CANALES ELECTRONICOS 0.00 $0.00 $-107,932.00 $0.00 00 00 00'
+Line 29: '(+) SALDOS MORA $0.00 SALDO ANTERIOR $107,931.26'
+Line 30: '(+) CARGOS COMPRA MES $434,979.26 (+) TOTAL COMPRAS MES $434,980.00'
+Line 31: '(+) CARGOS AVANCES MES $0.00 (+) AVANCES $0.00'
+
+Total lines with $ and numbers: 17
+
+Pattern Testing Results:
+
+Pattern 1: (\d{4})\s*\n\s*(\d{1,2})\s*\n\s*(\d{1,2})\s*\n\s*(\d{2})\s*\n.*?\$?([\d,]+\.?\d*)
+Matches found: 0
+
+Pattern 2: (\d{4})\s+(\d{1,2})\s+(\d{1,2})\s+(\d{2})\s+[\d.]+\s+\$?([\d,]+\.?\d*)
+Matches found: 0
+
+Pattern 3: (\d{1,2})\s*\n\s*(\d{1,2})\s*\n\s*(\d{2})\s*\n.*?\$?([\d,]+\.?\d*)
+Matches found: 0

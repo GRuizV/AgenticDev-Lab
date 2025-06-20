@@ -1,0 +1,38 @@
+Pattern Analysis for pymupdf
+==================================================
+Total lines: 251
+Text length: 6275 characters
+
+Lines containing $ and numbers:
+Line 74: '$0.00'
+Line 75: '$107,931.26'
+Line 76: '$434,979.26'
+Line 77: '$434,980.00'
+Line 78: '$0.00'
+Line 79: '$0.00'
+Line 80: '$0.00'
+Line 81: '$0.00'
+Line 82: '$0.00'
+Line 83: '$0.00'
+
+Total lines with $ and numbers: 41
+
+Pattern Testing Results:
+
+Pattern 1: (\d{4})\s*\n\s*(\d{1,2})\s*\n\s*(\d{1,2})\s*\n\s*(\d{2})\s*\n.*?\$?([\d,]+\.?\d*)
+Matches found: 6
+  Match 1: ('3850', '1', '26', '02', '2025')
+  Match 2: ('7888', '15', '02', '25', '26.19')
+  Match 3: ('9493', '14', '02', '25', '26.19')
+
+Pattern 2: (\d{4})\s+(\d{1,2})\s+(\d{1,2})\s+(\d{2})\s+[\d.]+\s+\$?([\d,]+\.?\d*)
+Matches found: 5
+  Match 1: ('7888', '15', '02', '25', '44,900.00')
+  Match 2: ('9493', '14', '02', '25', '50,000.00')
+  Match 3: ('0293', '10', '02', '25', '224,180.00')
+
+Pattern 3: (\d{1,2})\s*\n\s*(\d{1,2})\s*\n\s*(\d{2})\s*\n.*?\$?([\d,]+\.?\d*)
+Matches found: 12
+  Match 1: ('00', '17', '03', '2025')
+  Match 2: ('50', '1', '26', '02')
+  Match 3: ('88', '15', '02', '25')
