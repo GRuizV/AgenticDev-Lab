@@ -2,7 +2,7 @@ import json
 import pandas as pd
 
 # Base file path
-file_path = r"C:\Users\USUARIO\OneDrive\Nima Cloud\02 Desarrollo de Producto\PBA\POCs\Extraccion de Data\Pruebas\test #0\Metricas\ground_truth.json"
+file_path = r"C:\Users\USUARIO\GR\Software Development\Agentic Dev\Tests\(Nima) PBA\ground_truth.json"
 
 # Summarize each bill by total charges and number of transactions
 summary = []
