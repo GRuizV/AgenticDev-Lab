@@ -23,7 +23,7 @@ class Settings:
     verbose: bool = False
     
     # File processing settings
-    pdf_directory: str = "../Test PDFs"
+    pdf_directory: str = "../Test PDFs/base_6"
     output_format: str = "table"  # table, json, csv
     
     def __post_init__(self):

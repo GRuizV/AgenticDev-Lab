@@ -87,7 +87,7 @@ The application validates against these expected results:
 ┌────────────┬─────────────────────────────────────┬─────────────┐
 │ Date       │ Description                         │ Amount      │
 ├────────────┼─────────────────────────────────────┼─────────────┤
-│ 2025-02-06 │ MERCADO PAGO*TECNOPLAZ 760001CALI  │ $115,900.00 │
+│ 2025-02-06 │ MERCADO PAGO*TECNOPLAZ 760001CALI   │ $115,900.00 │
 │ 2025-02-10 │ MERCPAGO*CRUZVERDEPAGO BARRANQUILLA │ $224,180.00 │
 │ 2025-02-14 │ CINECOLOMBIA BOGOTA                 │ $50,000.00  │
 │ 2025-02-15 │ PAYU*NETFLIX 110111BOGOTA           │ $44,900.00  │

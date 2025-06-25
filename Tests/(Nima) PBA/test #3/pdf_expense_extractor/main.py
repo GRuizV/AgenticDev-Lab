@@ -94,7 +94,7 @@ def main():
             amount_tolerance=args.tolerance,
             verbose=args.verbose,
             show_progress=not args.no_progress,
-            pdf_directory=args.dir or "../Test PDFs"
+            pdf_directory=args.dir or "../Test PDFs/base_6"
         )
         
         # Create CLI interface
