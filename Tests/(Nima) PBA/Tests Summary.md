@@ -63,7 +63,23 @@
 
 
 
+## Test #3
 
+- **Purpose**: Evaluate Roo’s ability to autonomously infer PDF structure and extract expenses without any predefined parsing logic or tool constraints.
+
+- **Input**: Text-based credit card PDFs from a known issuer, with consistent format but no hints provided.
+
+- **Extraction target**:
+
+    * Date in DD MM YY format (e.g., 10 02 25)
+    * Description (e.g., SMART FIT METROPOLIS BOGOTA DC)
+    * Amount in COP format with $ and commas (e.g., $79,900.00)
+
+- **Expected output**: CLI table listing one row per expense with the extracted fields.
+
+- **Scope**: Roo must select the PDF parser, infer the structure of expense lines, choose the correct amount among multiple, and match both the total amount and number of transactions per file using ground truth as validation.
+
+- **Results**: TBD.
 
 
 
