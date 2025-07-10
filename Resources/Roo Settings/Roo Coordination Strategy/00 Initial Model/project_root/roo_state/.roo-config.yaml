@@ -1,0 +1,40 @@
+# Roo Configuration File
+
+project_name: RooCopilot
+
+pj_directory: pj_directory
+
+roles:
+  Orchestrator:
+    description: Coordinates agents and maintains central project state.
+    owns:
+      - roo_state/project_state.md
+      - roo_state/logs/global_log.md
+      - pj_directory/README.md
+  Architect:
+    description: Designs system architecture, diagrams, and structural decisions.
+    owns:
+      - roo_state/Architect/
+  Code:
+    description: Implements and modifies source code.
+    owns:
+      - pj_directory/src/
+      - roo_state/Code/
+  Debug:
+    description: Investigates bugs, logs issues, and tests hypotheses.
+    owns:
+      - pj_directory/tests/
+      - roo_state/Debug/
+  Ask:
+    description: Retrieves, summarizes, and explains documentation or decisions.
+    owns:
+      - read-only
+
+paths:
+  source: pj_directory/src
+  tests: pj_directory/tests
+  state: roo_state
+
+flags:
+  allow_stateless_ask: true
+  log_format: yaml
