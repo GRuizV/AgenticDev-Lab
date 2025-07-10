@@ -19,5 +19,14 @@ Example:
 - `"Today is June 6th, let’s begin today’s session"` → starts daily log for June 6th.
 - `"That’s it for today, summarize today’s session"` → ends log and summarizes the day.
 
+### Summary Sections
 
+Every entry has to contain at least (if applicable) the following sections:
+- ✅ Topics Covered
+- 🔎 Resources Reviewed
+- 🧪 Experiments Conducted
+- 🧩 Concepts Clarified
+- 🔧 Outputs Produced
+
+You may add any other topic you see relevant.
 
