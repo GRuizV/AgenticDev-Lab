@@ -1,0 +1,47 @@
+# PDF Credit Card Expense Extractor Configuration
+# Version: 1.0
+
+app_name: "PDF Credit Card Expense Extractor"
+version: "1.0.0"
+config_version: "1.0"
+
+# Extraction settings
+extraction:
+  default_pattern: null  # Auto-detect pattern if null
+  confidence_threshold: 0.7
+  max_pages: null  # Process all pages if null
+  timeout_seconds: 300
+  preserve_layout: true
+  extract_tables: true
+
+# Validation settings
+validation:
+  tolerance_percentage: 0.05  # 5% tolerance for amount matching
+  require_exact_count: true
+  min_accuracy_threshold: 0.8
+  validate_dates: true
+  validate_amounts: true
+
+# Pattern recognition settings
+patterns:
+  cache_patterns: true
+  auto_learn: false
+  pattern_confidence_threshold: 0.6
+  max_pattern_cache_size: 100
+
+# Output formatting settings
+output:
+  default_format: "table"  # table, json, csv
+  date_format: "%Y-%m-%d"
+  currency_symbol: "$"
+  decimal_places: 2
+  max_description_length: 50
+
+# Logging settings
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file_path: "logs/pdf_extractor.log"
+  max_file_size: 10485760  # 10MB
+  backup_count: 5
+  console_output: true
