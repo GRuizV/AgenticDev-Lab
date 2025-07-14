@@ -1,6 +1,6 @@
 import pdfplumber
 
-doc_path = r"C:\Users\USUARIO\OneDrive\Nima Cloud\02 Desarrollo de Producto\PBA\POCs\LLM interpreta Extractos\Extractos\AvVillas\MC\MC - ABR-2025.pdf"
+doc_path = r"C:\Users\USUARIO\GR\Software Development\Agentic Dev\Tests\(Nima) PBA\Test PDFs\base_6\AV - MC - 04 - ABR-2025.pdf"
 
 with pdfplumber.open(doc_path) as pdf:
 
