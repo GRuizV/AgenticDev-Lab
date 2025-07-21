@@ -8,3 +8,6 @@ ad_venv/
 /Tests/ReAct Framework/langchaintest.json
 /Tests/(Nima) PBA/Test PDFs
 /Tests/(Nima) PBA/test #4/pdf_extractor/pj_directory/src/ground_truth
+
+# Ignore __pycache__
+__pycache__/
