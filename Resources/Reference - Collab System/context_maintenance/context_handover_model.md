@@ -7,11 +7,11 @@ Enable smooth transfer of project context between sessions when:
 
 This ensures **no loss of historical reasoning** and allows new sessions to quickly hook into the ongoing workflow.
 
----
+
 
 ## How to Use This Model
 1. **When context is bloated:** Trigger a “Context Check”.
-2. **If recommended to start fresh:** Create a `handover.md` (or use this template directly in chat).
+2. **If recommended to start fresh:** Create a `handover.md` (or use the session handover template directly in chat).
 3. **Gather from the five core documents** (plus optional ones if relevant).
 4. **Spawn new session:** Share `handover.md` at the start of the new session.
 5. **Resume work** seamlessly.
@@ -21,113 +21,102 @@ This ensures **no loss of historical reasoning** and allows new sessions to quic
 ## Core Handover Components
 
 ### 1. Project README
-**Purpose:** Communicate the big picture.
-
-**Include:**
+Communicates the big picture:
 - What the project is (one paragraph)
 - Why it exists (problem being solved)
 - High-level architecture (diagram or text)
 
 
----
-
 ### 2. Project Logbook
-**Purpose:** Provide historical decisions and rationale.
-
-**Include:**
+Provides historical decisions and rationale:
 - Key decisions made so far (with dates)
 - Reasons behind them
 - Outcomes of those decisions
 
 
----
-
 ### 3. Development Plan
-**Purpose:** Show where we are in the roadmap.
-
-**Include:**
+Shows where we are in the roadmap:
 - Current phase & next planned steps
 - Completed tasks (checked)
 - Pending tasks (unchecked)
 
 
----
-
 ### 4. App Directory Map
-**Purpose:** Show project structure and key components.
-
-**Include:**
+Shows project structure and key components:
 - Project folder structure (tree view)
-- For critical modules: 
+- For critical modules:
   - file path
   - functions/classes inside
   - brief description of each function (I/O contract)
 
+#### Automated Generation
+The directory map is generated using **`files_structure_generator_v2.py`**:
+- **Location:** `docs/context_maintenance/files_structure_generator_v2.py`
+- **Purpose:** Automatically scans the project folder, extracts functions and class signatures, and outputs a Markdown map.
+- **Output:** Saved under `docs/context_maintenance/sessions/` as `project_map_YYYYMMDD_HHMMSS.md`
 
-Example:
-```
-    src/
-    ├── textract/
-    │ ├── trigger_textract.py # Upload to S3, run Textract async, return full JSON
-    │ └── parse_textract_output.py # Convert Textract JSON to raw tables (list of lists)
-    ├── core/
-    │ └── extract_expenses.py # Transform parsed tables → normalized expenses via template
+Usage:
+```Python
+    # Example
+    generate_markdown_tree(
+    start_path="path/to/project/root",
+    output_dir="path/to/context_maintenance/"
+    )
 ```
 
----
 
 ### 5. Last Session Handover
-**Purpose:** Bridge between sessions.
+Bridges between sessions:
 
-**Include:**
 - Last achieved milestone
 - Current open issues
 - Next steps to execute immediately
-- Any pending decisions or experiments
+- Pending decisions or experiments
 
-Example:
+Template provided in docs/context_maintenance/session_handover_template.md.
 
-    *Last Achieved*
-    - Implemented pagination in Textract async job → full JSON output.
-    - Built and tested adapter-based transformer (bancolombia_v1).
 
-    *Current Open Issues*
-    - Need to fine-tune transformer output vs ground truth.
-    - Validate precision & recall metrics for extracted expenses.
+### 6. Last Session Handover
+To ensure a new AI session (e.g., ChatGPT/GPT‑4o) adopts the correct Development Partner role, a prebuilt initialization prompt is included:
 
-    *Next Steps*
-    - Refine transformer field handling (e.g., date normalization, negative values).
-    - Improve test coverage for edge cases.
-    - Discuss DB storage format.
+  * Location: docs/context_maintenance/dev_partner_prompt_chatgpt.md
 
-    *Pending Decisions*
-    - Should Cuotas remain as strings permanently?
-    - Should we split template config per issuer?
+  * Purpose:
+    - Sets the AI assistant’s role and behavior expectations.
+    - Ensures reproducible onboarding of any new session.
 
-_You could use the handover template in the context_maintenance directory as well_ 
+  * Usage:
+    Paste the prompt at the start of any new session along with the handover context.
 
 ---
 
 ## Optional Components
-### Data Contracts
-Define input/output format for critical functions (JSON examples, schemas).
 
-### Dependency Snapshot
-`requirements.txt` or `poetry.lock` for environment reproducibility.
+  ### Data Contracts
+  Defines input/output formats for critical functions (JSON examples, schemas).
+
+  ### Dependency Snapshot
+  requirements.txt or poetry.lock for environment reproducibility.
 
 ---
 
 ## Workflow Checklist
-1. **Before session ends:** Update:
-   - Logbook (if decisions were made)
-   - Development Plan (if tasks completed)
-   - Last Session Handover (snapshot)
-2. **Generate Directory Map (if changed)**.
-3. **Paste Handover Summary** into the chat when spawning a new session.
+  
+  1. Before session ends, update:
+        * Logbook (if decisions were made).
+        * Development Plan (if tasks completed).
+        * Last Session Handover (snapshot).
+  2. Generate Directory Map (if changed) using the structure generator script.
+  3. Include Dev Partner Prompt in the new session initialization.
+  4. Paste Handover Summary into the chat when spawning a new session.
 
 ---
 
+
 ## Benefits
-- Minimal onboarding time for new sessions or contributors
-- Avoids rehashing old reasoning
-- Reduces errors from context loss
+
+  - Minimal onboarding time for new sessions or contributors.
+  - Avoids rehashing old reasoning.
+  - Reduces errors from context loss.
+  - Automates context preparation (directory map generation).
+  - Ensures consistent AI behavior (role prompt for Dev Partner).

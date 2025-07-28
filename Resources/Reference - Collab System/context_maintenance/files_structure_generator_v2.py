@@ -29,6 +29,7 @@ def format_arg(arg):
     return arg.arg
 
 def extract_functions_and_methods(file_path):
+    """Extract the functions, methods and their docstrings if present in the python file."""
     with open(file_path, "r", encoding="utf-8") as f:
         tree = ast.parse(f.read(), filename=file_path)
 
@@ -59,6 +60,8 @@ def extract_functions_and_methods(file_path):
     return functions, classes
 
 def generate_markdown_tree(start_path, output_dir):
+
+    "Creates the result markdown file with project's structure and functions description."
     
     modules_index = {}
 
